@@ -10,9 +10,16 @@ import Foundation
 
 class project : Exam
 {
-    //project title
-    //evaluation criteria dictionary
-    //total marks
-    //passing marks
+    var projectTitle : String
+    var evaluationCriteria = Dictionary<String,String>()
+    var totalMarks : Double
+    var passingMarks : Double
     
+    
+    override init() {
+        self.projectTitle = ""
+        self.totalMarks = 0.0
+        self.passingMarks = 0.0
+
+    }
 }
