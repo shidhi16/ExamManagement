@@ -16,7 +16,7 @@ class Student : Person
     var totalMarks:Float
     {
         var sum:Float = 0.0
-        for (subjectName,marksObt) in marks
+        for (_,marksObt) in marks
         {
             sum+=marksObt
         }
@@ -32,8 +32,8 @@ class Student : Person
     {
         self.class = "NONE"
         self.courseName = "NONE"
-        
         self.result = "NONE"
+        super.init()
     }
     
 }

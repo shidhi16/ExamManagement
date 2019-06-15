@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  Quiz.swift
 //  ExamManagement
 //
 //  Created by Vijender Singh on 2019-06-12.
@@ -8,8 +8,10 @@
 
 import Foundation
 
-var per:Float=96.5
-print(per.showPercentage())
-
-
-
+class Quiz : Exam
+{
+    //question list QuizQuestion class
+    //totalmarks
+    //passing marks
+    
+}

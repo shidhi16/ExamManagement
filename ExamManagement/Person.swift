@@ -7,14 +7,15 @@
 //
 
 import Foundation
-enum Gender{
+enum Gender
+{
     case MALE,FEMALE
 }
 class Person
 {
-    var id:Int
-    var firstName:String
-    var lastName:String
+    var id:Int?
+    var firstName:String?
+    var lastName:String?
     var fullName:String{
         get{
             return "\(self.firstName) \(self.lastName)"
@@ -22,6 +23,7 @@ class Person
     }
     var gender:Gender
     var birthDate:Date
+    var emailId: String
     
     init()
     {
@@ -29,8 +31,7 @@ class Person
         self.firstName = String()
         self.lastName = String()
         self.gender = Gender.MALE
+        self.emailId=""
         self.id = 0
     }
-    
-    
 }

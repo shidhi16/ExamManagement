@@ -10,6 +10,7 @@ import Foundation
 
 class Exam
 {
+    var examId : Int
     var examDate : Date
     var examStartTime : Date
     var examEndTime : Date

@@ -11,15 +11,17 @@ import Foundation
 class Faculty : Person
 {
     var department: String
+    var subjects = Dictionary<String,String>()
     var designation : String
     var salary : Float
     var joinDate : Date
  
     override init() {
-        self.department = "NONE"
-        self.designation = "NONE"
+        self.department = ""
+        self.designation = ""
         self.salary = 0.0
         self.joinDate = Date()
+        super.init()
     }
     
 }
