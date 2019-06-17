@@ -10,7 +10,7 @@ import Foundation
 
 struct quizQues
 {
-   // var qId: Int
-   // var ques: String
-    // var
+    var qId: Int
+    var ques: String
+    var options : String
 }
