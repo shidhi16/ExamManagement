@@ -10,8 +10,5 @@ import Foundation
 
 class Quiz : Exam
 {
-    //question list QuizQuestion class
-    //totalmarks
-    //passing marks
     
 }
