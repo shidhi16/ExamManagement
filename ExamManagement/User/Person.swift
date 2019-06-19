@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 enum Gender
 {
     case MALE,FEMALE
@@ -19,7 +20,8 @@ class Person
     var exam : Exam
     
     
-    var fullName:String{
+    var fullName:String
+    {
         get{
             return "\(self.firstName) \(self.lastName)"
         }

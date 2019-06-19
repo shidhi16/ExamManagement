@@ -22,5 +22,7 @@ class Exam
         self.examStartTime = Date()
         self.examEndTime = Date()
         self.subject = "NIL"
+        self.examId = 0
     }
+    
 }

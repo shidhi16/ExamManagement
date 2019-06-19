@@ -12,7 +12,7 @@ struct quizQues
 {
     var qId: Int
     var ques: String
-    var options : String
-    var x : Int
+    var options : Array<String>
+    var ans : String
     
 }
