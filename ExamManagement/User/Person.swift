@@ -16,6 +16,9 @@ class Person
     var id:Int?
     var firstName:String?
     var lastName:String?
+    var exam : Exam
+    
+    
     var fullName:String{
         get{
             return "\(self.firstName) \(self.lastName)"
@@ -27,6 +30,7 @@ class Person
     
     init()
     {
+        self.exam = Exam()
         self.birthDate = Date()
         self.firstName = String()
         self.lastName = String()

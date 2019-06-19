@@ -17,8 +17,9 @@ class Faculty : Person
     var joinDate : Date
  
     override init() {
-        self.department = ""
-        self.designation = ""
+        self.department = String()
+        
+        self.designation = String()
         self.salary = 0.0
         self.joinDate = Date()
         super.init()

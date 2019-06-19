@@ -9,7 +9,7 @@
 import Foundation
 class Student : Person
 {
-    var `class`:String
+   
     var subjects=Array<String>()
     var courseName:String
     var marks = Dictionary<String,Float>()
@@ -30,7 +30,7 @@ class Student : Person
     var result:String
     override init()
     {
-        self.class = "NONE"
+       
         self.courseName = "NONE"
         self.result = "NONE"
         super.init()

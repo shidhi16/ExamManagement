@@ -73,17 +73,33 @@
 		3922711122B1D5FC00799BE3 /* ExamManagement */ = {
 			isa = PBXGroup;
 			children = (
+				9B638E8722B9B34800ECAEA2 /* Exam */,
+				9B638E8622B9B32500ECAEA2 /* User */,
 				3922711222B1D5FC00799BE3 /* main.swift */,
-				3922711922B1D61700799BE3 /* Person.swift */,
-				3922711B22B1D7A300799BE3 /* Student.swift */,
-				3922711D22B1DA2600799BE3 /* Faculty.swift */,
-				3922711F22B1DC3600799BE3 /* Exam.swift */,
-				3922712122B1F77E00799BE3 /* Quiz.swift */,
-				3922713A22B2F62600799BE3 /* project.swift */,
 				3922716122B47A1A00799BE3 /* Display.swift */,
 				3922716322B47FFB00799BE3 /* quizQuestions.swift */,
 			);
 			path = ExamManagement;
+			sourceTree = "<group>";
+		};
+		9B638E8622B9B32500ECAEA2 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				3922711D22B1DA2600799BE3 /* Faculty.swift */,
+				3922711B22B1D7A300799BE3 /* Student.swift */,
+				3922711922B1D61700799BE3 /* Person.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		9B638E8722B9B34800ECAEA2 /* Exam */ = {
+			isa = PBXGroup;
+			children = (
+				3922712122B1F77E00799BE3 /* Quiz.swift */,
+				3922713A22B2F62600799BE3 /* project.swift */,
+				3922711F22B1DC3600799BE3 /* Exam.swift */,
+			);
+			path = Exam;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
