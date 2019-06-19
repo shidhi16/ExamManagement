@@ -76,6 +76,7 @@
 				9B638E8722B9B34800ECAEA2 /* Exam */,
 				9B638E8622B9B32500ECAEA2 /* User */,
 				3922711222B1D5FC00799BE3 /* main.swift */,
+				3922711B22B1D7A300799BE3 /* Student.swift */,
 				3922716122B47A1A00799BE3 /* Display.swift */,
 				3922716322B47FFB00799BE3 /* quizQuestions.swift */,
 			);
@@ -86,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				3922711D22B1DA2600799BE3 /* Faculty.swift */,
-				3922711B22B1D7A300799BE3 /* Student.swift */,
 				3922711922B1D61700799BE3 /* Person.swift */,
 			);
 			path = User;
