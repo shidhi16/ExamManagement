@@ -12,8 +12,12 @@ enum Gender
 {
     case MALE,FEMALE
 }
-class Person
+class Person 
 {
+    func display() -> String
+    {
+        return "ID : \(id)"+"\nFirst Name : \(firstName)"+"\nLast Name : \(lastName)"+"\nFull Name : \(fullName)"+"\nGender : \(gender)"+"\nBirth Date : \(birthDate)"+"\nEmail ID : \(emailId)"+"\nExam : \(exam)"
+    }
     var id:Int?
     var firstName:String?
     var lastName:String?
@@ -23,7 +27,7 @@ class Person
     var fullName:String
     {
         get{
-            return "\(self.firstName) \(self.lastName)"
+            return "\(self.firstName!) \(self.lastName!)"
         }
     }
     var gender:Gender

@@ -7,9 +7,12 @@
 //
 
 import Foundation
-class Student : Person
+class Student : Person, Display
 {
-   
+    override func display() -> String
+    {
+        return "Subjects : \(subjects)"+"\nCourse Name : \(courseName)"+"\nMarks : \(marks)"+"\nTotal Marks : \(totalMarks)"+"\nPercentage : \(percentage)" + "\nResult : \(result)"
+    }
     var subjects=Array<String>()
     var courseName:String
     var marks = Dictionary<String,Float>()
@@ -31,8 +34,8 @@ class Student : Person
     override init()
     {
        
-        self.courseName = "NONE"
-        self.result = "NONE"
+        self.courseName = ""
+        self.result = ""
         super.init()
     }
     

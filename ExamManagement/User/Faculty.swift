@@ -10,7 +10,7 @@ import Foundation
 
 class Faculty : Person,Display
 {
-    func display() -> String
+    override func display() -> String
     {
         return "department : \(department)"+"\nsubjects : \(subjects)"+"\ndesignation : \(designation)"+"\nsalary : \(salary)"+"\njoinDate : \(joinDate)"
     }
@@ -28,15 +28,13 @@ class Faculty : Person,Display
         self.salary = 0.0
         self.joinDate = Date()
         super.init()
-        
-        
     }
     
     func setQuiz(obj : quizQues) -> (String)
     {
         if obj == nil             //use if-let
         {
-            return "Obj empty"
+            return "Object empty"
         }
         else
         {

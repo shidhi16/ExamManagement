@@ -10,5 +10,12 @@ import Foundation
 
 class Quiz : Exam
 {
+    //var quizFaculty = Faculty()
+    //var quizSubject : String
+    //var quizTotalMarks :
     
-}
+    
+    //override init() {
+        
+    }
+
