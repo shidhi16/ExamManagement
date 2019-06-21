@@ -20,11 +20,4 @@ enum StudentError: Error
     case InvalidEmail
 }
 
-extension String
-{
-    func isValidEmail() -> Bool
-    {
-        //Write code to validate email
-        return true
-    }
-}
+
