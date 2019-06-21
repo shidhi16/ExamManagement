@@ -20,6 +20,7 @@
 		3922720D22BD722300799BE3 /* extension_string.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922720C22BD722300799BE3 /* extension_string.swift */; };
 		3922720F22BD762300799BE3 /* ExamCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922720E22BD762300799BE3 /* ExamCategory.swift */; };
 		3922721122BD793400799BE3 /* extension_float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922721022BD793400799BE3 /* extension_float.swift */; };
+		3922721322BD8E8800799BE3 /* EvaluationCriteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922721222BD8E8800799BE3 /* EvaluationCriteria.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,7 @@
 		3922720C22BD722300799BE3 /* extension_string.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension_string.swift; sourceTree = "<group>"; };
 		3922720E22BD762300799BE3 /* ExamCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamCategory.swift; sourceTree = "<group>"; };
 		3922721022BD793400799BE3 /* extension_float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension_float.swift; sourceTree = "<group>"; };
+		3922721222BD8E8800799BE3 /* EvaluationCriteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationCriteria.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				3922712122B1F77E00799BE3 /* Quiz.swift */,
 				3922713A22B2F62600799BE3 /* project.swift */,
 				3922711F22B1DC3600799BE3 /* Exam.swift */,
+				3922721222BD8E8800799BE3 /* EvaluationCriteria.swift */,
 			);
 			path = Exam;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				3922716222B47A1A00799BE3 /* Display.swift in Sources */,
 				3922713B22B2F62600799BE3 /* project.swift in Sources */,
 				3922716422B47FFB00799BE3 /* quizQuestions.swift in Sources */,
+				3922721322BD8E8800799BE3 /* EvaluationCriteria.swift in Sources */,
 				3922720D22BD722300799BE3 /* extension_string.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

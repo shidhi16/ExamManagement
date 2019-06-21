@@ -11,7 +11,7 @@ import Foundation
 class project : Exam
 {
     var projectTitle : String
-    var evaluationCriteria = Dictionary<String,String>()
+    var evaluationCriteria = Dictionary<String,String>()    //class - Fields // Array // Key- Int, Value -
     var totalMarks : Double
     var passingMarks : Double
     

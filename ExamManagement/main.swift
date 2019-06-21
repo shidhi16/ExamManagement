@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 var ObjPerson : Person = Person()
 ObjPerson.id = 100
 ObjPerson.firstName = "Shivani"
