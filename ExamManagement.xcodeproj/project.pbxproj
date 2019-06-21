@@ -16,6 +16,8 @@
 		3922713B22B2F62600799BE3 /* project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922713A22B2F62600799BE3 /* project.swift */; };
 		3922716222B47A1A00799BE3 /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922716122B47A1A00799BE3 /* Display.swift */; };
 		3922716422B47FFB00799BE3 /* quizQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922716322B47FFB00799BE3 /* quizQuestions.swift */; };
+		3922720A22BD711200799BE3 /* ErrorCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922720922BD711200799BE3 /* ErrorCheck.swift */; };
+		3922720D22BD722300799BE3 /* extension_string.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922720C22BD722300799BE3 /* extension_string.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +43,8 @@
 		3922713A22B2F62600799BE3 /* project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project.swift; sourceTree = "<group>"; };
 		3922716122B47A1A00799BE3 /* Display.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Display.swift; sourceTree = "<group>"; };
 		3922716322B47FFB00799BE3 /* quizQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizQuestions.swift; sourceTree = "<group>"; };
+		3922720922BD711200799BE3 /* ErrorCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCheck.swift; sourceTree = "<group>"; };
+		3922720C22BD722300799BE3 /* extension_string.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension_string.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 		3922710622B1D5FC00799BE3 = {
 			isa = PBXGroup;
 			children = (
+				3922720B22BD720800799BE3 /* Extensions */,
 				3922711122B1D5FC00799BE3 /* ExamManagement */,
 				3922711022B1D5FC00799BE3 /* Products */,
 			);
@@ -80,6 +85,23 @@
 				3922716322B47FFB00799BE3 /* quizQuestions.swift */,
 			);
 			path = ExamManagement;
+			sourceTree = "<group>";
+		};
+		3922720822BD70DE00799BE3 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				3922720922BD711200799BE3 /* ErrorCheck.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		3922720B22BD720800799BE3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3922720C22BD722300799BE3 /* extension_string.swift */,
+				3922720822BD70DE00799BE3 /* Error */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		9B638E8622B9B32500ECAEA2 /* User */ = {
@@ -163,12 +185,14 @@
 				3922711E22B1DA2600799BE3 /* Faculty.swift in Sources */,
 				3922712022B1DC3600799BE3 /* Exam.swift in Sources */,
 				3922712222B1F77E00799BE3 /* Quiz.swift in Sources */,
+				3922720A22BD711200799BE3 /* ErrorCheck.swift in Sources */,
 				3922711A22B1D61700799BE3 /* Person.swift in Sources */,
 				3922711C22B1D7A300799BE3 /* Student.swift in Sources */,
 				3922711322B1D5FC00799BE3 /* main.swift in Sources */,
 				3922716222B47A1A00799BE3 /* Display.swift in Sources */,
 				3922713B22B2F62600799BE3 /* project.swift in Sources */,
 				3922716422B47FFB00799BE3 /* quizQuestions.swift in Sources */,
+				3922720D22BD722300799BE3 /* extension_string.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
