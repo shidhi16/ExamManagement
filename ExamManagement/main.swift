@@ -8,6 +8,10 @@
 
 import Foundation
 
+
+let dateFormatter = DateFormatter()
+dateFormatter.dateFormat = "yyyy-MM-dd"
+
 //var per:Float=96.5
 //print(per.showPercentage())
 
