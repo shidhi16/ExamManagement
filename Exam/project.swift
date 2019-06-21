@@ -22,4 +22,9 @@ class project : Exam
         self.passingMarks = 0.0
 
     }
+    
+    override func display() -> String
+    {
+        return "Project Title: \(projectTitle)"+"\nEvaluation Criteria : \(evaluationCriteria)"+"\nTotal Marks : \(totalMarks)"+"\nPassing Marks : \(passingMarks)"
+    }
 }

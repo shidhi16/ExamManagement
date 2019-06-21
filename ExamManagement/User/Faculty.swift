@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Faculty : Person,Display
+class Faculty : Person
 {
     override func display() -> String
     {
@@ -20,13 +20,14 @@ class Faculty : Person,Display
     var designation : String
     var salary : Float
     var joinDate : Date
-    //var quizObj : quizQues
+    var examIncharge : eCategory
     override init()
     {
         self.department = ""
         self.designation = ""
         self.salary = 0.0
         self.joinDate = Date()
+        self.examIncharge = eCategory.notAssigned
         super.init()
     }
     

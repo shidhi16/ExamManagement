@@ -8,8 +8,23 @@
 
 import Foundation
 
-enum ErrorCheck : Error
+enum FacultyError: Error
 {
-    case invalidEmail
-   // case invalidId
+    case InvalidSalary
+    case InvalidEmail
+    case InvalidSalaryWithMessage(msg: String)
+}
+
+enum StudentError: Error
+{
+    case InvalidEmail
+}
+
+extension String
+{
+    func isValidEmail() -> Bool
+    {
+        //Write code to validate email
+        return true
+    }
 }

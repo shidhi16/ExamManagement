@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Student : Person, Display
+class Student : Person
 {
     override func display() -> String
     {

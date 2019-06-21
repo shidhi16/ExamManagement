@@ -18,6 +18,8 @@
 		3922716422B47FFB00799BE3 /* quizQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922716322B47FFB00799BE3 /* quizQuestions.swift */; };
 		3922720A22BD711200799BE3 /* ErrorCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922720922BD711200799BE3 /* ErrorCheck.swift */; };
 		3922720D22BD722300799BE3 /* extension_string.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922720C22BD722300799BE3 /* extension_string.swift */; };
+		3922720F22BD762300799BE3 /* ExamCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922720E22BD762300799BE3 /* ExamCategory.swift */; };
+		3922721122BD793400799BE3 /* extension_float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922721022BD793400799BE3 /* extension_float.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +47,8 @@
 		3922716322B47FFB00799BE3 /* quizQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizQuestions.swift; sourceTree = "<group>"; };
 		3922720922BD711200799BE3 /* ErrorCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCheck.swift; sourceTree = "<group>"; };
 		3922720C22BD722300799BE3 /* extension_string.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension_string.swift; sourceTree = "<group>"; };
+		3922720E22BD762300799BE3 /* ExamCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamCategory.swift; sourceTree = "<group>"; };
+		3922721022BD793400799BE3 /* extension_float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension_float.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +65,9 @@
 		3922710622B1D5FC00799BE3 = {
 			isa = PBXGroup;
 			children = (
-				3922720B22BD720800799BE3 /* Extensions */,
 				3922711122B1D5FC00799BE3 /* ExamManagement */,
+				9B638E8722B9B34800ECAEA2 /* Exam */,
+				3922720B22BD720800799BE3 /* Extensions */,
 				3922711022B1D5FC00799BE3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,7 +83,6 @@
 		3922711122B1D5FC00799BE3 /* ExamManagement */ = {
 			isa = PBXGroup;
 			children = (
-				9B638E8722B9B34800ECAEA2 /* Exam */,
 				9B638E8622B9B32500ECAEA2 /* User */,
 				3922711222B1D5FC00799BE3 /* main.swift */,
 				3922716122B47A1A00799BE3 /* Display.swift */,
@@ -99,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				3922720C22BD722300799BE3 /* extension_string.swift */,
+				3922721022BD793400799BE3 /* extension_float.swift */,
+				3922720E22BD762300799BE3 /* ExamCategory.swift */,
 				3922720822BD70DE00799BE3 /* Error */,
 			);
 			path = Extensions;
@@ -183,7 +189,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3922711E22B1DA2600799BE3 /* Faculty.swift in Sources */,
+				3922721122BD793400799BE3 /* extension_float.swift in Sources */,
 				3922712022B1DC3600799BE3 /* Exam.swift in Sources */,
+				3922720F22BD762300799BE3 /* ExamCategory.swift in Sources */,
 				3922712222B1F77E00799BE3 /* Quiz.swift in Sources */,
 				3922720A22BD711200799BE3 /* ErrorCheck.swift in Sources */,
 				3922711A22B1D61700799BE3 /* Person.swift in Sources */,

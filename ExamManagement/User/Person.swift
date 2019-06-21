@@ -12,7 +12,7 @@ enum Gender
 {
     case MALE,FEMALE
 }
-class Person 
+class Person : Display
 {
     func display() -> String
     {

@@ -9,22 +9,17 @@
 import Foundation
 
 
-let dateFormatter = DateFormatter()
-dateFormatter.dateFormat = "yyyy-MM-dd"
-
-//var per:Float=96.5
-//print(per.showPercentage())
-
 var ObjPerson : Person = Person()
-ObjPerson.id=100
+ObjPerson.id = 100
 ObjPerson.firstName = "Shivani"
 ObjPerson.lastName = "Dhiman"
 print(ObjPerson.fullName)
-ObjPerson.gender=Gender.FEMALE
+ObjPerson.gender = Gender.FEMALE
 //ObjPerson.birthdate :
 ObjPerson.emailId = "shivanidhiman1619@gmail.com"
 //ObjPerson.exam
 
+ 
 var Obj : quizQues = quizQues()
 Obj.qId=1
 Obj.ques="IOS Stands For?"
@@ -76,6 +71,7 @@ Objstudent.subjects.append("Android")
 Objstudent.result.append("PASS")
 
 print(Obj.display())
-print(ObjPerson.display())
+//print(ObjPerson.display())
 print(Objfaculty.display())
 print(Objstudent.display())
+
