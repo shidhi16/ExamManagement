@@ -19,7 +19,7 @@ class Faculty : Person
  
 
     
-     init(userid: Int, fname: String, lname: String, arrayexam: [Exam], gender: Gender, birthdate: Date, email: String,department : String, designation :String, salary : Float, joindate :Date )
+     init(userid: Int, fname: String, lname: String, arrayexam: [Exam], gender: Gender, birthdate: Date, email: String,department : String, designation :String, salary : Float, joindate :Date,arraysubjects : [String], contactNo : String )
      {
         self.department = department
        
@@ -50,9 +50,9 @@ class Faculty : Person
         
         
     }
-    override func display() -> String
+    override func display()
     {
-        return "department : \(department)"+"\nsubjects : \(subjects)"+"\ndesignation : \(designation)"+"\nsalary : \(salary)"+"\njoinDate : \(joinDate)"
+        print( "department : \(department)"+"\nsubjects : \(arraysubjects)"+"\ndesignation : \(designation)"+"\nsalary : \(salary)"+"\njoinDate : \(joinDate)")
     }
     
 }

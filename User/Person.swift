@@ -51,8 +51,17 @@ class Person : Display
     }
     
   
-    func display() -> String
+    func display()
     {
-        return "ID : \(id)"+"\nFirst Name : \(firstName)"+"\nLast Name : \(lastName)"+"\nFull Name : \(fullName)"+"\nGender : \(gender)"+"\nBirth Date : \(birthDate)"+"\nEmail ID : \(emailId)"+"\nExam : \(exam)"
+        print("-------- Person Details ---------")
+        print("User Id :\(self.userid)")
+        print("Exams :\(self.arrayOfExam)")
+        print("Subjects :\(self.arraysubjects)")
+        print("Birth Date :\(self.birthDate)")
+        print("First Name:\(self.firstName)")
+        print("Last Name :\(self.lastName)")
+        print("Gender :\(self.gender)")
+        print("Email Id :\(self.emailId)")
+        print("Contact No :\(self.contactNo)")
     }
 }

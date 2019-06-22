@@ -30,7 +30,7 @@ class Student : Person
     }
     var result:String
     
-    init(userid: Int, fname: String, lname: String, arrayexam: [Exam], gender: Gender, birthdate: Date, email: String, coursename : String, marks : Dictionary<String, Float>, result : String  )
+    init(userid: Int, fname: String, lname: String, arrayexam: [Exam], gender: Gender, birthdate: Date, email: String, coursename : String, marks : Dictionary<String, Float>, result : String , arraysubjects : [String], contactNo : String )
     {
         self.courseName = coursename
         self.marks = marks
@@ -39,8 +39,8 @@ class Student : Person
         self.result = result
         super.init(userid: userid, fname: fname, lname: lname, arrayexam: arrayexam, gender: gender, birthdate: birthdate, email: email, arraysubjects: arraysubjects, contactNo: contactNo)
     }
-    override func display() -> String
+    override func display()
     {
-        return "Subjects : \(subjects)"+"\nCourse Name : \(courseName)"+"\nMarks : \(marks)"+"\nTotal Marks : \(totalMarks)"+"\nPercentage : \(percentage)" + "\nResult : \(result)"
+        print("Subjects : \(arraysubjects)"+"\nCourse Name : \(courseName)"+"\nMarks : \(marks)"+"\nTotal Marks : \(totalMarks)"+"\nPercentage : \(percentage)" + "\nResult : \(result)")
     }
 }
