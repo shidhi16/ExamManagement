@@ -8,22 +8,24 @@
 
 import Foundation
 
-var qzQues1 = quizQuestions(qid: 1, question: "IOS Stands For", options: ["Internetwork Operating System","IPhone Operating System","Internet Operating System", "None Of Them"], answer: "1")
+var qzQues1 = quizQuestions(qid: 1, question: "IOS Stands For", options: ["A : Internetwork Operating System","B : IPhone Operating System","C : Internet Operating System", "D :None Of Them"], answer: "A")
 
 var qzQues2 = quizQuestions(qid: 2, question: "The IDE Used In Swift Is", options: ["Swiftc","Xcode","Gas", "Ld"], answer: "2")
 
-var qzQues3 = quizQuestions(qid: 3, question: "To Create Mutable Object __ Is Used", options: ["let","Var","Both A & B", "None Of Them"], answer: "1")
+var qzQues3 = quizQuestions(qid: 3, question: "To Create Mutable Object __ Is Used", options: ["A : let","Var","Both A & B", "None Of Them"], answer: "1")
 
 
 
-var qz1 = Quiz(examid: 1, examdate: Date(), subject: "Ios", incharge: "Pritesh Patel", quizid: 1 , marksforeach: 5.00, totalmarks: 50.00, passingmarks: 17.00, arrayques: [qzQues1, qzQues2])
+var qz1 = Quiz(examid: 1, examdate: Date(), subject: "Ios", incharge: "Pritesh Patel", quizid: 1 , marksforeach: 5.00, totalmarks: 50.0, passingmarks: 17.0, arrayques: [qzQues1, qzQues2])
+qz1.display()
 
-var qz2 = Quiz(examid: 2, examdate: Date(), subject: "Swift", incharge: "Joe Josh", quizid: 2 , marksforeach: 5.00, totalmarks: 50.00, passingmarks: 17.00, arrayques: [qzQues3, qzQues2])
-
+var qz2 = Quiz(examid: 2, examdate: Date(), subject: "Swift", incharge: "Joe Josh", quizid: 2 , marksforeach: 5.00, totalmarks: 50.0, passingmarks: 17.0, arrayques: [qzQues3, qzQues2])
+qz2.display()
 var proj1 = Project(examid: 1, examdate: Date(), subject: "Ios", incharge: "Sushi Toe", projecttitle: "Exam Management", totalmarks: 100.00, passingmarks: 35.00)
+proj1.display()
 
 var proj2 = Project(examid: 2, examdate: Date(), subject: "Swift", incharge: "Harpreet", projecttitle: "Air Bnb", totalmarks: 100.00, passingmarks: 35.00)
-
+proj2.display()
 /*
 
 var Objstudent : Student = Student()

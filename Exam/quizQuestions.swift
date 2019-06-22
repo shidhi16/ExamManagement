@@ -26,6 +26,7 @@ class quizQuestions : Display
     
     func display()
     {
+        print("\n\n---Quiz Questions ----")
         print("Question Id :\(self.qId)")
         print("Question :\(self.ques)")
         print("Options :\(self.options)")

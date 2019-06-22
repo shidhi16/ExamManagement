@@ -38,6 +38,7 @@ class Exam : Display
         print("Exam Date : \(self.examDate)")
         print("Incharge : \(self.Incharge)")
         print("Total Marks : \(self.totalMarks)")
+        print("Passing Marks :\(self.passingMarks)")
 
 
     }

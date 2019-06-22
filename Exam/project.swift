@@ -26,6 +26,7 @@ class Project : Exam
     
     override func display()
     {
+        super.display()
           print("----------- Project Details -------------")
         print("Project Title :\(self.projectTitle)")
     }
