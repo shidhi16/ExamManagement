@@ -61,6 +61,14 @@ class Person : Display
         print("First Name:\(self.firstName)")
         print("Last Name :\(self.lastName)")
         print("Gender :\(self.gender)")
+        
+        let isValidEmail = emailId.isValidEmail()
+        if isValidEmail == true
+         {  print("Email Id :\(self.emailId)")}
+        else  {
+            print("Invalid Email")
+        }
+        
         print("Email Id :\(self.emailId)")
         print("Contact No :\(self.contactNo)")
     }
