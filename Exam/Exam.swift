@@ -13,21 +13,20 @@ class Exam : Display
     
     var examId : Int
     var examDate : Date
-    var examStartTime : Date
-    var examEndTime : Date
     var subject : String
+    var  Incharge : String
     
-    init()
+    init(examid:Int, examdate : Date, subject : String, incharge : String)
     {
-        self.examDate = Date()
-        self.examStartTime = Date()
-        self.examEndTime = Date()
-        self.subject = "NIL"
-        self.examId = 0
+        self.examId = examid
+        self.examDate = examdate
+        self.subject = subject
+        self.Incharge = incharge
+        
     }
     func display() -> String
     {
-        return "Exam ID : \(examId)"+"\nExam Date : \(examDate)"+"\nExam Start Time : \(examStartTime)"+"\nExam End Time : \(examEndTime)"+"\nSubject: \(subject)"
+        return "Exam ID : \(examId)"+"\nExam Date : \(examDate)"+"\nSubject: \(subject)"+"Incharge : \(Incharge)"
 
     }
     }

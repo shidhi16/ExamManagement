@@ -11,7 +11,9 @@ import Foundation
 class Project : Exam
 {
     var projectTitle : String
-    var evaluationCriteria:EvaluationCriteria //= Dictionary<String,String>()    //class - Fields // Array // Key- Int, Value -
+  //  var evaluationCriteria:EvaluationCriteria //= Dictionary<String,String>()    //class - Fields // Array // Key- Int, Value -
+    
+   
     var totalMarks : Double
     var passingMarks : Double
     
@@ -19,7 +21,7 @@ class Project : Exam
     override init()
     {
         self.projectTitle = ""
-        self.evaluationCriteria = evaluationCriteria
+       // self.evaluationCriteria = evaluationCriteria
         self.totalMarks = 0.0
         self.passingMarks = 0.0
 
@@ -27,6 +29,6 @@ class Project : Exam
     
     override func display() -> String
     {
-        return "Project Title: \(projectTitle)"+"\nEvaluation Criteria : \(evaluationCriteria)"+"\nTotal Marks : \(totalMarks)"+"\nPassing Marks : \(passingMarks)"
+        return "Project Title: \(projectTitle)"+"\nTotal Marks : \(totalMarks)"+"\nPassing Marks : \(passingMarks)"
     }
 }
