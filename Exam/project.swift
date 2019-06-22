@@ -24,8 +24,9 @@ class Project : Exam
         super.init(examid: examid, examdate: examdate, subject: subject, incharge: incharge, totalmarks : totalmarks, passingmarks : passingmarks)
     }
     
-    override func display() -> String
+    override func display()
     {
-        return "Project Title: \(projectTitle)"
+          print("----------- Project Details -------------")
+        print("Project Title :\(self.projectTitle)")
     }
 }

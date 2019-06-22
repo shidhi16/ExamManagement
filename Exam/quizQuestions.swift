@@ -10,6 +10,7 @@ import Foundation
 
 class quizQuestions : Display
 {
+    
     var qId: Int
     var ques: String
     var options = [String]()
@@ -23,8 +24,14 @@ class quizQuestions : Display
         self.options = options
     }
     
-    func display() -> String
+    func display()
     {
-        return "Q \(qId). \(ques)"+"\n 1.\(options[0])"+"\n 2.\(options[1])"+"\n 3.\(options[2])"+"\n 4.\(options[3])"+"\n Ans. \(ans)"
+        print("Question Id :\(self.qId)")
+        print("Question :\(self.ques)")
+        print("Options :\(self.options)")
+
+        print("Answer :\(self.ans)")
+
+
     }
 }

@@ -18,11 +18,13 @@ var qzQues3 = quizQuestions(qid: 3, question: "To Create Mutable Object __ Is Us
 
 var qz1 = Quiz(examid: 1, examdate: Date(), subject: "Ios", incharge: "Pritesh Patel", quizid: 1 , marksforeach: 5.00, totalmarks: 50.00, passingmarks: 17.00, arrayques: [qzQues1, qzQues2])
 
-
-
 var qz2 = Quiz(examid: 2, examdate: Date(), subject: "Swift", incharge: "Joe Josh", quizid: 2 , marksforeach: 5.00, totalmarks: 50.00, passingmarks: 17.00, arrayques: [qzQues3, qzQues2])
 
+var proj1 = Project(examid: 1, examdate: Date(), subject: "Ios", incharge: "Sushi Toe", projecttitle: "Exam Management", totalmarks: 100.00, passingmarks: 35.00)
 
+var proj2 = Project(examid: 2, examdate: Date(), subject: "Swift", incharge: "Harpreet", projecttitle: "Air Bnb", totalmarks: 100.00, passingmarks: 35.00)
+
+/*
 
 var Objstudent : Student = Student()
 Objstudent.courseName.append("MADT")
@@ -91,4 +93,7 @@ print(Obj.display())
 //print(ObjPerson.display())
 print(Objfaculty.display())
 print(Objstudent.display())
+ 
+*/
  */
+

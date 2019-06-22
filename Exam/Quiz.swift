@@ -23,10 +23,12 @@ class Quiz : Exam
         super.init(examid: examid, examdate: examdate, subject: subject, incharge: incharge, totalmarks: totalmarks, passingmarks: passingmarks)
     }
     
-    func display()
+     override func display()
     {
             print("----------- Quiz Details -------------")
-        
+        print("Quiz Id : \(self.quizId)")
+        print("Marks for Each Question : \(self.marksForEachQues)")
+        print("Questions : \(self.arrayOfQues)")
     }
   
 }

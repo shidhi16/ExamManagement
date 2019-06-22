@@ -11,6 +11,7 @@ import Foundation
 class Exam : Display
 {
     
+    
     var examId : Int
     var examDate : Date
     var subject : String
@@ -29,9 +30,15 @@ class Exam : Display
         self.passingMarks = passingmarks
         
     }
-    func display() -> String
+    func display()
     {
-        return "Exam ID : \(examId)"+"\nExam Date : \(examDate)"+"\nSubject: \(subject)"+"Incharge : \(Incharge)"+"\nTotal Marks : \(totalMarks)"+"\nPassing Marks : \(passingMarks)"
+        print("-------- Exam Details ---------")
+        print("Exam Id : \(self.examId)")
+        print("Subject : \(self.subject)")
+        print("Exam Date : \(self.examDate)")
+        print("Incharge : \(self.Incharge)")
+        print("Total Marks : \(self.totalMarks)")
+
 
     }
     }

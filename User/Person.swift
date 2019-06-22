@@ -14,6 +14,8 @@ enum Gender
 }
 class Person : Display
 {
+   
+    
     
     var userid:Int?
     var firstName:String?

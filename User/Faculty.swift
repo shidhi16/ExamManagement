@@ -27,7 +27,7 @@ class Faculty : Person
         self.salary = salary
         self.joinDate = joindate
         
-       super.init(userid: userid, fname: fname, lname: lname, arrayexam: arrayexam, gender: gender, birthdate: birthdate, email: email)
+        super.init(userid: userid, fname: fname, lname: lname, arrayexam: arrayexam, gender: gender, birthdate: birthdate, email: email, arraysubjects: arraysubjects, contactNo: contactNo)
     }
     
     
