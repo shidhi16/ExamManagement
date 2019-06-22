@@ -12,15 +12,15 @@ class quizQuestions : Display
 {
     var qId: Int
     var ques: String
-    var options : Array<String>
-    var ans : String
+    var options = [String]()
+   var ans : String
     
-    init()
+    init(qid : Int , question : String , options : [String] , answer : String)
     {
-        self.qId = 0
-        self.ques = ""
-        self.ans = ""
-        self.options = []
+        self.qId = qid
+        self.ques = question
+        self.ans = answer
+        self.options = options
     }
     
     func display() -> String

@@ -8,11 +8,19 @@
 
 import Foundation
 
-var qzQues1 = quizQuestions()
+var qzQues1 = quizQuestions(qid: 1, question: "IOS Stands For", options: ["Internetwork Operating System","IPhone Operating System","Internet Operating System", "None Of Them"], answer: "1")
+
+var qzQues2 = quizQuestions(qid: 2, question: "The IDE Used In Swift Is", options: ["Swiftc","Xcode","Gas", "Ld"], answer: "2")
+
+var qzQues3 = quizQuestions(qid: 3, question: "To Create Mutable Object __ Is Used", options: ["let","Var","Both A & B", "None Of Them"], answer: "1")
 
 
-var qz1 = Quiz(examid: 1, examdate: Date(), subject: [Swift, Ios], incharge: "Pritesh Patel", quizid: 1 , marksforeach: 5.00, totalmarks: 50.00, passingmarks: 17.00, arrayques: <#T##[quizQuestions]#>)
 
+var qz1 = Quiz(examid: 1, examdate: Date(), subject: "Ios", incharge: "Pritesh Patel", quizid: 1 , marksforeach: 5.00, totalmarks: 50.00, passingmarks: 17.00, arrayques: [qzQues1, qzQues2])
+
+
+
+var qz2 = Quiz(examid: 2, examdate: Date(), subject: "Swift", incharge: "Joe Josh", quizid: 2 , marksforeach: 5.00, totalmarks: 50.00, passingmarks: 17.00, arrayques: [qzQues3, qzQues2])
 
 
 
