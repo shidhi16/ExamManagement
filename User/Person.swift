@@ -19,9 +19,7 @@ class Person : Display
     var firstName:String?
     var lastName:String?
     var arrayOfExam = [Exam]()
-    
-    
-    
+
     var fullName:String
     {
         get{

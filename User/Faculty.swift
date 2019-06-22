@@ -10,35 +10,35 @@ import Foundation
 
 class Faculty : Person
 {
-    override func display() -> String
-    {
-        return "department : \(department)"+"\nsubjects : \(subjects)"+"\ndesignation : \(designation)"+"\nsalary : \(salary)"+"\njoinDate : \(joinDate)"
-    }
-    
+   
     var department: String
-    var subjects = Dictionary<String,String>()
+    var arraysubjects = [String] ()
     var designation : String
     var salary : Float
     var joinDate : Date
-    var examIncharge : eCategory
-    override init()
-    {
-        self.department = ""
-        self.designation = ""
-        self.salary = 0.0
-        self.joinDate = Date()
-        self.examIncharge = eCategory.notAssigned
-        super.init()
+ 
+
+    
+     init(userid: Int, fname: String, lname: String, arrayexam: [Exam], gender: Gender, birthdate: Date, email: String,department : String, arraysubjects : [String], designation :String, salary : Float, joindate :Date )
+     {
+        self.department = department
+        self.arraysubjects = arraysubjects
+        self.designation = designation
+        self.salary = salary
+        self.joinDate = joindate
+        
+       super.init(userid: userid, fname: fname, lname: lname, arrayexam: arrayexam, gender: gender, birthdate: birthdate, email: email)
     }
     
-    func setQuiz(obj : quizQues) -> (String)
+    
+    func setQuiz(obj : quizQuestions) -> (String)
     {
-       // if obj == nil             //use if-let
-        do {
+       if obj == nil             //use if-let
+         {
             return "Object empty"
         }
         
-        //else
+        else
         
          {
             let quesId = obj.qId
@@ -49,6 +49,10 @@ class Faculty : Person
         }
         
         
+    }
+    override func display() -> String
+    {
+        return "department : \(department)"+"\nsubjects : \(subjects)"+"\ndesignation : \(designation)"+"\nsalary : \(salary)"+"\njoinDate : \(joinDate)"
     }
     
 }
