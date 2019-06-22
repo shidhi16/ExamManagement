@@ -8,13 +8,13 @@
 
 import Foundation
 
-class evaluationCriteria
+class EvaluationCriteria
 {
-    let namingConvention : Float   //10%
-    let errorHandling : Float       //15%
-    let extensionsDefined : Float    //20%
-    let codeFormatting : Float       //25%
-    let codeCompletion : Float       //30%
+    var namingConvention : Float   //10%    
+    var errorHandling : Float       //15%
+    var extensionsDefined : Float    //20%
+    var codeFormatting : Float       //25%
+    var codeCompletion : Float       //30%
     
     init()
     {

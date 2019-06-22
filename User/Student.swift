@@ -33,7 +33,6 @@ class Student : Person
     var result:String
     override init()
     {
-       
         self.courseName = ""
         self.result = ""
         super.init()

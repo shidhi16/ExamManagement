@@ -8,16 +8,18 @@
 
 import Foundation
 
-class project : Exam
+class Project : Exam
 {
     var projectTitle : String
-    var evaluationCriteria = Dictionary<String,String>()    //class - Fields // Array // Key- Int, Value -
+    var evaluationCriteria:EvaluationCriteria //= Dictionary<String,String>()    //class - Fields // Array // Key- Int, Value -
     var totalMarks : Double
     var passingMarks : Double
     
     
-    override init() {
+    override init()
+    {
         self.projectTitle = ""
+        self.evaluationCriteria = evaluationCriteria
         self.totalMarks = 0.0
         self.passingMarks = 0.0
 

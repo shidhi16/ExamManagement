@@ -33,15 +33,17 @@ class Faculty : Person
     
     func setQuiz(obj : quizQues) -> (String)
     {
-        if obj == nil             //use if-let
-        {
+       // if obj == nil             //use if-let
+        do {
             return "Object empty"
         }
-        else
-        {
-            var quesId = obj.qId
-            var currentQues = obj.ques
-            var currentAns = obj.ans
+        
+        //else
+        
+         {
+            let quesId = obj.qId
+            let currentQues = obj.ques
+            let currentAns = obj.ans
             var currentOpt : Array<String> = obj.options
             return "Q \(quesId). \(currentQues)"+"\n 1.\(currentOpt[0])"+"\n 2.\(currentOpt[1])"+"\n 3.\(currentOpt[2])"+"\n 4.\(currentOpt[3])"+"\n Ans. \(currentAns)"
         }

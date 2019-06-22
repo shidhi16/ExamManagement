@@ -8,7 +8,20 @@
 
 import Foundation
 
-var ObjPerson : Person = Person()
+
+var Objstudent : Student = Student()
+Objstudent.courseName.append("MADT")
+Objstudent.subjects.append("Swift")
+Objstudent.subjects.append("DBMS")
+Objstudent.subjects.append("Java")
+Objstudent.subjects.append("iOS")
+Objstudent.subjects.append("Android")
+//Objstudent.marks = 436
+//Objstudent.totalMarks
+//Objstudent.percentage
+Objstudent.result.append("PASS")
+
+/*var ObjPerson : Person = Person()
 ObjPerson.id = 100
 ObjPerson.firstName = "Shivani"
 ObjPerson.lastName = "Dhiman"
@@ -57,20 +70,10 @@ Objfaculty.designation.append("Professor")
 Objfaculty.salary=1000
 
 
-var Objstudent : Student = Student()
-Objstudent.courseName.append("MADT")
-Objstudent.subjects.append("Swift")
-Objstudent.subjects.append("DBMS")
-Objstudent.subjects.append("Java")
-Objstudent.subjects.append("iOS")
-Objstudent.subjects.append("Android")
-//Objstudent.marks = 436
-//Objstudent.totalMarks
-//Objstudent.percentage
-Objstudent.result.append("PASS")
+
 
 print(Obj.display())
 //print(ObjPerson.display())
 print(Objfaculty.display())
 print(Objstudent.display())
-
+ */
