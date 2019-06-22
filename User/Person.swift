@@ -19,7 +19,7 @@ class Person : Display
     var firstName:String?
     var lastName:String?
     var arrayOfExam = [Exam]()
-
+   var arraysubjects = [String] ()
     var fullName:String
     {
         get{
@@ -30,16 +30,21 @@ class Person : Display
     var gender:Gender
     var birthDate:Date
     var emailId: String
+    var contactNo : String
     
-    init(userid : Int, fname : String, lname : String, arrayexam : [Exam], gender : Gender, birthdate : Date, email : String)
+    init(userid : Int, fname : String, lname : String, arrayexam : [Exam], gender : Gender,
+         birthdate : Date, email : String, arraysubjects : [String], contactNo : String
+        )
     {
         self.userid = userid
         self.arrayOfExam = arrayexam
+         self.arraysubjects = arraysubjects
         self.birthDate = birthdate
         self.firstName = fname
         self.lastName = lname
         self.gender = Gender.MALE
         self.emailId = email
+        self.contactNo = contactNo
        
     }
     

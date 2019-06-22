@@ -9,13 +9,11 @@
 import Foundation
 class Student : Person
 {
-    override func display() -> String
-    {
-        return "Subjects : \(subjects)"+"\nCourse Name : \(courseName)"+"\nMarks : \(marks)"+"\nTotal Marks : \(totalMarks)"+"\nPercentage : \(percentage)" + "\nResult : \(result)"
-    }
-    var subjects=Array<String>()
+   
+   
     var courseName:String
     var marks = Dictionary<String,Float>()
+   
     var totalMarks:Float
     {
         var sum:Float = 0.0
@@ -31,11 +29,18 @@ class Student : Person
         
     }
     var result:String
-    override init()
-    {
-        self.courseName = ""
-        self.result = ""
-        super.init()
-    }
     
+    init(userid: Int, fname: String, lname: String, arrayexam: [Exam], gender: Gender, birthdate: Date, email: String, coursename : String, marks : Dictionary<String, Float>, result : String  )
+    {
+        self.courseName = coursename
+        self.marks = marks
+      //  self.totalMarks = totalmarks
+       //self.percentage = percentage
+        self.result = result
+        super.init(userid: userid, fname: fname, lname: lname, arrayexam: arrayexam, gender: gender, birthdate: birthdate, email: email, arraysubjects: arraysubjects, contactNo: contactNo)
+    }
+    override func display() -> String
+    {
+        return "Subjects : \(subjects)"+"\nCourse Name : \(courseName)"+"\nMarks : \(marks)"+"\nTotal Marks : \(totalMarks)"+"\nPercentage : \(percentage)" + "\nResult : \(result)"
+    }
 }

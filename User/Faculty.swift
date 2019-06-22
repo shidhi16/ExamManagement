@@ -12,17 +12,17 @@ class Faculty : Person
 {
    
     var department: String
-    var arraysubjects = [String] ()
+ 
     var designation : String
     var salary : Float
     var joinDate : Date
  
 
     
-     init(userid: Int, fname: String, lname: String, arrayexam: [Exam], gender: Gender, birthdate: Date, email: String,department : String, arraysubjects : [String], designation :String, salary : Float, joindate :Date )
+     init(userid: Int, fname: String, lname: String, arrayexam: [Exam], gender: Gender, birthdate: Date, email: String,department : String, designation :String, salary : Float, joindate :Date )
      {
         self.department = department
-        self.arraysubjects = arraysubjects
+       
         self.designation = designation
         self.salary = salary
         self.joinDate = joindate
