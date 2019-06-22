@@ -8,7 +8,7 @@
 
 import Foundation
 
-class quizQues : Display
+class quizQuestions : Display
 {
     var qId: Int
     var ques: String
