@@ -11,10 +11,15 @@ import Foundation
 class Quiz : Exam
 {
     
-   // var quizFaculty = Faculty()
-   // var quizSubject : String
-    //var quizTotalMarks :
-    //override init(quizFaculty = Faculty, quizSubject : String, quizTotalMarks : Float) {
-    //}
+    let quizId : Int
+    var marksForEachQues : Float
     
+     init(examid: Int, examdate: Date, subject: String, incharge: String, quizid : Int, marksforeach : Float,  totalmarks : Double, passingmarks : Double)
+     {
+        self.quizId = quizid
+        self.marksForEachQues = marksforeach
+        super.init(examid: examid, examdate: examdate, subject: subject, incharge: incharge, totalmarks: totalmarks, passingmarks: passingmarks)
+    }
+    
+  
 }

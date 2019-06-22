@@ -14,21 +14,18 @@ class Project : Exam
   //  var evaluationCriteria:EvaluationCriteria //= Dictionary<String,String>()    //class - Fields // Array // Key- Int, Value -
     
    
-    var totalMarks : Double
-    var passingMarks : Double
-    
-    
-    override init()
-    {
-        self.projectTitle = ""
-       // self.evaluationCriteria = evaluationCriteria
-        self.totalMarks = 0.0
-        self.passingMarks = 0.0
 
+    
+     init(examid: Int, examdate: Date, subject: String, incharge: String, projecttitle : String, totalmarks : Double, passingmarks : Double)
+    {
+       
+        self.projectTitle = projecttitle
+     
+        super.init(examid: examid, examdate: examdate, subject: subject, incharge: incharge, totalmarks : totalmarks, passingmarks : passingmarks)
     }
     
     override func display() -> String
     {
-        return "Project Title: \(projectTitle)"+"\nTotal Marks : \(totalMarks)"+"\nPassing Marks : \(passingMarks)"
+        return "Project Title: \(projectTitle)"
     }
 }
