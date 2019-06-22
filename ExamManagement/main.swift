@@ -8,6 +8,13 @@
 
 import Foundation
 
+var qzQues1 = quizQuestions()
+
+
+var qz1 = Quiz(examid: 1, examdate: Date(), subject: [Swift, Ios], incharge: "Pritesh Patel", quizid: 1 , marksforeach: 5.00, totalmarks: 50.00, passingmarks: 17.00, arrayques: <#T##[quizQuestions]#>)
+
+
+
 
 var Objstudent : Student = Student()
 Objstudent.courseName.append("MADT")
