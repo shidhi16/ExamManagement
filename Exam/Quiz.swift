@@ -23,6 +23,10 @@ class Quiz : Exam
         super.init(examid: examid, examdate: examdate, subject: subject, incharge: incharge, totalmarks: totalmarks, passingmarks: passingmarks)
     }
     
-    
+    func display()
+    {
+            print("----------- Quiz Details -------------")
+        
+    }
   
 }

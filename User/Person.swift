@@ -14,14 +14,12 @@ enum Gender
 }
 class Person : Display
 {
-    func display() -> String
-    {
-        return "ID : \(id)"+"\nFirst Name : \(firstName)"+"\nLast Name : \(lastName)"+"\nFull Name : \(fullName)"+"\nGender : \(gender)"+"\nBirth Date : \(birthDate)"+"\nEmail ID : \(emailId)"+"\nExam : \(exam)"
-    }
-    var id:Int?
+    
+    var userid:Int?
     var firstName:String?
     var lastName:String?
-    var exam : Exam
+    var arrayOfExam = [Exam]()
+    
     
     
     var fullName:String
@@ -30,18 +28,26 @@ class Person : Display
             return "\(self.firstName!) \(self.lastName!)"
         }
     }
+    
     var gender:Gender
     var birthDate:Date
     var emailId: String
     
-    init()
+    init(userid : Int, fname : String, lname : String, arrayexam : [Exam], gender : Gender, birthdate : Date, email : String)
     {
-        self.exam = Exam()
-        self.birthDate = Date()
-        self.firstName = String()
-        self.lastName = String()
+        self.userid = userid
+        self.arrayOfExam = arrayexam
+        self.birthDate = birthdate
+        self.firstName = fname
+        self.lastName = lname
         self.gender = Gender.MALE
-        self.emailId=""
-        self.id = 0
+        self.emailId = email
+       
+    }
+    
+  
+    func display() -> String
+    {
+        return "ID : \(id)"+"\nFirst Name : \(firstName)"+"\nLast Name : \(lastName)"+"\nFull Name : \(fullName)"+"\nGender : \(gender)"+"\nBirth Date : \(birthDate)"+"\nEmail ID : \(emailId)"+"\nExam : \(exam)"
     }
 }
