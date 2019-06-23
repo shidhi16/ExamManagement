@@ -74,7 +74,7 @@ class Person : Display
             print("Invalid Email")
         }
         
-        print("Email Id :\(self.emailId)")
+      //  print("Email Id :\(self.emailId)")
         print("Contact No :\(self.contactNo)")
     }
 }

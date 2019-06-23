@@ -35,7 +35,7 @@ proj1.display()
 var proj2 = Project(examid: 2, examdate: Date(), subject: "Swift", incharge: "Harpreet", projecttitle: "Air Bnb", totalmarks: 100.00, passingmarks: 35.00, evcriteria: ev1)
 proj2.display()
 
-var s1 = Student(userid: 1, fname: "Naina", lname: "Vaghasiya", arrayexam: [exm1,exm2], gender: Gender.FEMALE, birthdate: Date(), email: "naina@gmail.com", coursename: "MADT", marks: ["IOS": 87.00], result: "Pass", arraysubjects: ["IOS","Swift"], contactNo: "90909090")
+var s1 = Student(userid: 1, fname: "Naina", lname: "Vaghasiya", arrayexam: [exm1,exm2], gender: Gender.FEMALE, birthdate: Date(), email: "naina@gmail.com", coursename: "MADT", marks: ["IOS": 87.00, "Swift": 08.00], result: "Pass", arraysubjects: ["IOS","Swift"], contactNo: "90909090")
 s1.display()
 /*
 
