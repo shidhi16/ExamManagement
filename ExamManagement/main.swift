@@ -23,14 +23,16 @@ var qz2 = Quiz(examid: 2, examdate: Date(), subject: "Swift", incharge: "Joe Jos
 qz2.display()
 
 
-var ev1 = EvaluationCriteria(namecon: 10, errorhandle: 15, extensiondefined: 15, codeformat: 25, codecompletion: 15, eDict: ("IOS", 10))
+var ev1 = EvaluationCriteria(namecon: 10, errorhandle: 15, extensiondefined: 15, codeformat: 25, codecompletion: 15, eDict: ["IOS": 10])
 
 
 
-var proj1 = Project(examid: 1, examdate: Date(), subject: "Ios", incharge: "Sushi Toe", projecttitle: "Exam Management", totalmarks: 100.00, passingmarks: 35.00, )
+
+
+var proj1 = Project(examid: 1, examdate: Date(), subject: "Ios", incharge: "Sushi Toe", projecttitle: "Exam Management", totalmarks: 100.00, passingmarks: 35.00, evcriteria: ev1)
 proj1.display()
 
-var proj2 = Project(examid: 2, examdate: Date(), subject: "Swift", incharge: "Harpreet", projecttitle: "Air Bnb", totalmarks: 100.00, passingmarks: 35.00)
+var proj2 = Project(examid: 2, examdate: Date(), subject: "Swift", incharge: "Harpreet", projecttitle: "Air Bnb", totalmarks: 100.00, passingmarks: 35.00, evcriteria: ev1)
 proj2.display()
 /*
 
