@@ -25,15 +25,18 @@ qz2.display()
 
 var ev1 = EvaluationCriteria(namecon: 10, errorhandle: 15, extensiondefined: 15, codeformat: 25, codecompletion: 15, eDict: ["IOS": 10])
 
+var exm1 = Exam(examid: 1, examdate: Date(), subject: "IOS", incharge: "Markle", totalmarks: 100.0, passingmarks: 35.0)
 
-
-
+var exm2 = Exam(examid: 2, examdate: Date(), subject: "Java", incharge: "Josh", totalmarks: 100.0, passingmarks: 35.0)
 
 var proj1 = Project(examid: 1, examdate: Date(), subject: "Ios", incharge: "Sushi Toe", projecttitle: "Exam Management", totalmarks: 100.00, passingmarks: 35.00, evcriteria: ev1)
 proj1.display()
 
 var proj2 = Project(examid: 2, examdate: Date(), subject: "Swift", incharge: "Harpreet", projecttitle: "Air Bnb", totalmarks: 100.00, passingmarks: 35.00, evcriteria: ev1)
 proj2.display()
+
+var s1 = Student(userid: 1, fname: "Naina", lname: "Vaghasiya", arrayexam: [exm1,exm2], gender: Gender.FEMALE, birthdate: Date(), email: "naina@gmail.com", coursename: "MADT", marks: ["IOS": 87.00], result: "Pass", arraysubjects: ["IOS","Swift"], contactNo: "90909090")
+s1.display()
 /*
 
 var Objstudent : Student = Student()

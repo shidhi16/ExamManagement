@@ -29,6 +29,7 @@ class Quiz : Exam
             print("----------- Quiz Details -------------")
         print("Quiz Id : \(self.quizId)")
         print("Marks for Each Question : \(self.marksForEachQues)")
+        
         for item in arrayOfQues {
             print("\n")
             print("Question : \(item.qId)")

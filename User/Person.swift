@@ -55,6 +55,11 @@ class Person : Display
     {
         print("-------- Person Details ---------")
         print("User Id :\(self.userid)")
+        
+        for item in arrayOfExam {
+            print(item.examId)
+        }
+        
         print("Exams :\(self.arrayOfExam)")
         print("Subjects :\(self.arraysubjects)")
         print("Birth Date :\(self.birthDate)")
