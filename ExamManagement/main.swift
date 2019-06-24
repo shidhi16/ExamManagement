@@ -22,10 +22,10 @@ var qzQues4 = quizQuestions(qid: 4, question: "Which of these is a type of strea
 
 var qzQues5 = quizQuestions(qid: 5, question: " Which of these classes are used by character streams for input and output operations?", options: ["A : InputStream ","B : BufferedInputStream","C : ArrayInputStream", "D : ByteArrayInputStream"], answer: "D")
 
-var qz1 = Quiz(examid: 1, examname: "IOS Quiz", examdate: Date(), subject: "Ios", incharge: "Pritesh Patel", quizid: 1 , marksforeach: 5.00, totalmarks: 50.0, passingmarks: 17.0, arrayques: [qzQues1, qzQues2])
+var qz1 = Quiz(examid: 1, examname: "Ios Quiz", examdate: Date(), subject: "Ios", incharge: "Pritesh Patel", quizid: 1 , marksforeach: 5.00, totalmarks: 50.0, passingmarks: 17.0, arrayques: [qzQues1, qzQues2])
 qz1.display()
 
-var qz2 = Quiz(examid: 2, examname: "Swift Quiz", examdate: Date(), subject: "Swift", incharge: "Joe Josh", quizid: 2 , marksforeach: 5.00, totalmarks: 50.0, passingmarks: 17.0, arrayques: [qzQues3, qzQues4,qzQues5])
+var qz2 = Quiz(examid: 2, examname: "Java Quiz", examdate: Date(), subject: "Java", incharge: "Joe Josh", quizid: 2 , marksforeach: 5.00, totalmarks: 50.0, passingmarks: 17.0, arrayques: [qzQues3, qzQues4,qzQues5])
 qz2.display()
 
 
@@ -39,7 +39,7 @@ var exm4 = Exam(examid: 4, examdate: Date(), subject: "Ios", incharge: "Jaspreet
 
 
 
-var proj1 = Project(examid: 1, examname: "IOS Project", examdate: Date(), subject: "Ios", incharge: "Sushi Toe", projecttitle: "Exam Management", totalmarks: 100.00, passingmarks: 35.00, evcriteria: ev1)
+var proj1 = Project(examid: 1, examname: "Ios Project", examdate: Date(), subject: "Ios", incharge: "Sushi Toe", projecttitle: "Exam Management", totalmarks: 100.00, passingmarks: 35.00, evcriteria: ev1)
 proj1.display()
 
 var proj2 = Project(examid: 2, examname: "Java Project", examdate: Date(), subject: "Java", incharge: "Harpreet", projecttitle: "Air Bnb", totalmarks: 100.00, passingmarks: 35.00, evcriteria: ev1)

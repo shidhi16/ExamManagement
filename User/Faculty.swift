@@ -53,10 +53,10 @@ class Faculty : Person
     
     
     
+    
     override func display()
     {
         super.display()
-        
         print( "Department : \(department)"+"\nDesignation : \(designation)"+"\nSalary : \(salary.currency())"+"\nJoin Date : \(joinDate.getForamttedDate())")
         
         print("\n------|| Exams Created ||------")
@@ -66,7 +66,8 @@ class Faculty : Person
             print("Subjects :\(item.subject)")
             print("Exams : \(item.examname)")
             print("Exam Date :\(item.examDate.getForamttedDate())")
-        }
+
     }
     
+}
 }
