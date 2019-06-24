@@ -53,28 +53,35 @@ class Person : Display
   
     func display()
     {
-        print("-------- Person Details ---------")
-        print("User Id :\(self.userid)")
-        
-        for item in arrayOfExam {
-            print(item.examId)
-        }
-        
-        print("Exams :\(self.arrayOfExam)")
-        print("Subjects :\(self.arraysubjects)")
+        print("\n\n-------- Person Details ---------")
+       print("User Id :\(self.userid)")
+        print("Full Name :\(self.fullName)")
         print("Birth Date :\(self.birthDate)")
-        print("First Name:\(self.firstName)")
-        print("Last Name :\(self.lastName)")
+       
         print("Gender :\(self.gender)")
         
         let isValidEmail = emailId.isValidEmail()
         if isValidEmail == true
-         {  print("Email Id :\(self.emailId)")}
+        {  print("Email Id :\(self.emailId)")}
         else  {
             print("Invalid Email")
         }
         
-      //  print("Email Id :\(self.emailId)")
+        //  print("Email Id :\(self.emailId)")
         print("Contact No :\(self.contactNo)")
-    }
+        
+        // print("Exams :\(self.arrayOfExam)")
+        print("Subjects :\(self.arraysubjects)")
+
+        print("---- Exam Details -----")
+
+        for item in arrayOfExam {
+          print("Subject \(item.subject)")
+            print("Exams : \(item.examname)")
+            print("Exam Date :\(item.examDate)")
+            
+        }
+        
+       
+          }
 }

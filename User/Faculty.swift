@@ -52,7 +52,8 @@ class Faculty : Person
     }
     override func display()
     {
-        print( "department : \(department)"+"\nsubjects : \(arraysubjects)"+"\ndesignation : \(designation)"+"\nsalary : \(salary)"+"\njoinDate : \(joinDate)")
+        super.display()
+        print( "department : \(department)"+"\ndesignation : \(designation)"+"\nsalary : \(salary)"+"\njoinDate : \(joinDate)")
     }
     
 }

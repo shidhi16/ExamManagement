@@ -16,27 +16,32 @@ var qzQues3 = quizQuestions(qid: 3, question: "To Create Mutable Object __ Is Us
 
 
 
-var qz1 = Quiz(examid: 1, examdate: Date(), subject: "Ios", incharge: "Pritesh Patel", quizid: 1 , marksforeach: 5.00, totalmarks: 50.0, passingmarks: 17.0, arrayques: [qzQues1, qzQues2])
+var qz1 = Quiz(examid: 1, examname: "IOS QUIZ", examdate: Date(), subject: "Ios", incharge: "Pritesh Patel", quizid: 1 , marksforeach: 5.00, totalmarks: 50.0, passingmarks: 17.0, arrayques: [qzQues1, qzQues2])
 qz1.display()
 
-var qz2 = Quiz(examid: 2, examdate: Date(), subject: "Swift", incharge: "Joe Josh", quizid: 2 , marksforeach: 5.00, totalmarks: 50.0, passingmarks: 17.0, arrayques: [qzQues3, qzQues2])
+var qz2 = Quiz(examid: 2, examname: "IOS Project", examdate: Date(), subject: "Swift", incharge: "Joe Josh", quizid: 2 , marksforeach: 5.00, totalmarks: 50.0, passingmarks: 17.0, arrayques: [qzQues3, qzQues2])
 qz2.display()
 
 
 var ev1 = EvaluationCriteria(namecon: 10, errorhandle: 15, extensiondefined: 15, codeformat: 25, codecompletion: 15, eDict: ["IOS": 10])
 
-var exm1 = Exam(examid: 1, examdate: Date(), subject: "IOS", incharge: "Markle", totalmarks: 100.0, passingmarks: 35.0)
+var exm1 = Exam(examid: 1, examdate: Date(), subject: "IOS", incharge: "Markle", totalmarks: 100.0, passingmarks: 35.0, examname: "IOS Project")
 
-var exm2 = Exam(examid: 2, examdate: Date(), subject: "Java", incharge: "Josh", totalmarks: 100.0, passingmarks: 35.0)
 
-var proj1 = Project(examid: 1, examdate: Date(), subject: "Ios", incharge: "Sushi Toe", projecttitle: "Exam Management", totalmarks: 100.00, passingmarks: 35.00, evcriteria: ev1)
+
+var exm2 = Exam(examid: 2, examdate: Date(), subject: "Java", incharge: "Josh", totalmarks: 100.0, passingmarks: 35.0, examname: "IOS Quiz")
+
+var proj1 = Project(examid: 1, examname: "IOS Project", examdate: Date(), subject: "Ios", incharge: "Sushi Toe", projecttitle: "Exam Management", totalmarks: 100.00, passingmarks: 35.00, evcriteria: ev1)
 proj1.display()
 
-var proj2 = Project(examid: 2, examdate: Date(), subject: "Swift", incharge: "Harpreet", projecttitle: "Air Bnb", totalmarks: 100.00, passingmarks: 35.00, evcriteria: ev1)
+var proj2 = Project(examid: 2, examname: "IOS QUIZ", examdate: Date(), subject: "Swift", incharge: "Harpreet", projecttitle: "Air Bnb", totalmarks: 100.00, passingmarks: 35.00, evcriteria: ev1)
 proj2.display()
 
-var s1 = Student(userid: 1, fname: "Naina", lname: "Vaghasiya", arrayexam: [exm1,exm2], gender: Gender.FEMALE, birthdate: Date(), email: "naina@gmail.com", coursename: "MADT", marks: ["IOS": 87.00, "Swift": 08.00], result: "Pass", arraysubjects: ["IOS","Swift"], contactNo: "90909090")
+var s1 = Student(userid: 1, fname: "Naina", lname: "Vaghasiya", arrayexam: [exm1,exm2], gender: Gender.MALE, birthdate: Date(), email: "naina@gmail.com", coursename: "MADT", marks: ["IOS": 87.00, "Swift": 08.00], result: "Pass", arraysubjects: ["IOS","Swift"], contactNo: "90909090")
 s1.display()
+
+var f1 = Faculty(userid: 1, fname: "Pritesh", lname: "Patel", arrayexam: [exm2,exm1], gender: Gender.MALE, birthdate: Date(), email: "PriteshP@gmail.com", department: "MADT", designation: "Professior", salary: 6000.00, joindate: Date(), arraysubjects: ["Swift","IOS","Java"], contactNo: "222(333)-6767")
+f1.display()
 /*
 
 var Objstudent : Student = Student()

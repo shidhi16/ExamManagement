@@ -16,12 +16,12 @@ class Project : Exam
     
     
     
-    init(examid: Int, examdate: Date, subject: String, incharge: String, projecttitle : String, totalmarks : Double, passingmarks : Double, evcriteria : EvaluationCriteria)
+    init(examid: Int, examname : String, examdate: Date, subject: String, incharge: String, projecttitle : String, totalmarks : Double, passingmarks : Double, evcriteria : EvaluationCriteria)
     {
         
         self.projectTitle = projecttitle
         self.evaluationCriteria = evcriteria
-        super.init(examid: examid, examdate: examdate, subject: subject, incharge: incharge, totalmarks : totalmarks, passingmarks : passingmarks)
+        super.init(examid: examid, examdate: examdate, subject: subject, incharge: incharge, totalmarks : totalmarks, passingmarks : passingmarks, examname: examname)
     }
     
     override func display()

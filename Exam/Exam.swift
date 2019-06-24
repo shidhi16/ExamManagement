@@ -13,6 +13,7 @@ class Exam : Display
     
     
     var examId : Int
+    var examname : String
     var examDate : Date
     var subject : String
     var  Incharge : String
@@ -20,9 +21,10 @@ class Exam : Display
     var passingMarks : Double
     
     
-    init(examid:Int, examdate : Date, subject : String, incharge : String, totalmarks : Double, passingmarks : Double)
+    init(examid:Int, examdate : Date, subject : String, incharge : String, totalmarks : Double, passingmarks : Double, examname :String)
     {
         self.examId = examid
+        self.examname = examname
         self.examDate = examdate
         self.subject = subject
         self.Incharge = incharge
@@ -34,6 +36,7 @@ class Exam : Display
     {
         print("-------- Exam Details ---------")
         print("Exam Id : \(self.examId)")
+        print("Exam Name : \(self.examname)")
         print("Subject : \(self.subject)")
         print("Exam Date : \(self.examDate)")
         print("Incharge : \(self.Incharge)")

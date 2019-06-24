@@ -15,12 +15,12 @@ class Quiz : Exam
     var marksForEachQues : Float
     var arrayOfQues = [quizQuestions]()
     
-    init(examid: Int, examdate: Date, subject: String, incharge: String, quizid : Int, marksforeach : Float,  totalmarks : Double, passingmarks : Double, arrayques : [quizQuestions])
+    init(examid: Int,examname :String, examdate: Date, subject: String, incharge: String, quizid : Int, marksforeach : Float,  totalmarks : Double, passingmarks : Double, arrayques : [quizQuestions])
      {
         self.quizId = quizid
         self.marksForEachQues = marksforeach
         self.arrayOfQues = arrayques
-        super.init(examid: examid, examdate: examdate, subject: subject, incharge: incharge, totalmarks: totalmarks, passingmarks: passingmarks)
+        super.init(examid: examid, examdate: examdate, subject: subject, incharge: incharge, totalmarks: totalmarks, passingmarks: passingmarks, examname: examname)
     }
     
      override func display()
