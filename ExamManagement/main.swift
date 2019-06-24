@@ -23,7 +23,7 @@ var qz2 = Quiz(examid: 2, examname: "Swift Quiz", examdate: Date(), subject: "Sw
 qz2.display()
 
 
-var ev1 = EvaluationCriteria(namecon: 10, errorhandle: 15, extensiondefined: 15, codeformat: 25, codecompletion: 15, eDict: ["IOS": 10])
+var ev1 = EvaluationCriteria(namecon: 10, errorhandle: 15, extensiondefined: 15, codeformat: 25, codecompletion: 15)
 
 var exm1 = Exam(examid: 1, examdate: Date(), subject: "IOS", incharge: "Markle", totalmarks: 100.0, passingmarks: 35.0, examname: "IOS Project")
 

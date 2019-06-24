@@ -47,11 +47,13 @@ class Student : Person
         
         for item in arrayOfExam {
             print("Subject :\(item.subject)")
-            print("Exams : \(item.examname)")
+            print("Exam Name: \(item.examname)")
             print("Exam Date :\(item.examDate.getForamttedDate())")
+            print("Total Marks : \(item.totalMarks)")
+            print("Passing Marks :\(item.passingMarks)")
         }
         
-            print("\nMarks : \(marks)"+"\nTotal Marks : \(totalMarks)"+"\nPercentage : \(percentage.showPercentage())" + "\nResult : \(result)")
+            print("\nMarks Obtained : \(marks)"+"\nTotal Obtained Marks : \(totalMarks)"+"\nPercentage : \(percentage.showPercentage())" + "\nResult : \(result)")
         
     }
 }

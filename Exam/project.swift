@@ -27,9 +27,10 @@ class Project : Exam
     override func display()
     {
         super.display()
-        print("----------- Project Details -------------")
-        print("Project Title :\(self.projectTitle)")
-        print("ev:\(self.evaluationCriteria)")
+        print("\n----------|| Project Details ||------------\n")
+        print("Project Title : \(self.projectTitle)")
+        //print("ev:\(self.evaluationCriteria)")
+        print("Evaluation Criteria :")
         self.evaluationCriteria.display()
     }
 }

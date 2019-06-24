@@ -16,21 +16,21 @@ class EvaluationCriteria
     var extensionsDefined : Float    //20%
     var codeFormatting : Float       //25%
     var codeCompletion : Float       //30%
-    var eDict = Dictionary<String,Int>()
+  //  var eDict = Dictionary<String,Int>()
     
-    init(namecon : Float, errorhandle : Float, extensiondefined : Float, codeformat : Float, codecompletion : Float,eDict: Dictionary<String,Int>)
+    init(namecon : Float, errorhandle : Float, extensiondefined : Float, codeformat : Float, codecompletion : Float)
     {
         self.namingConvention = namecon
         self.errorHandling = errorhandle
         self.extensionsDefined = extensiondefined
         self.codeFormatting = codeformat
         self.codeCompletion = codecompletion
-        self.eDict = eDict
+        
     }
     func display()
     {
        
-        print ( "Naming Convention : \(namingConvention)"+"\nError Handling : \(errorHandling)"+"\nExtensions Defined : \(extensionsDefined)"+"\nCode Formatting: \(codeFormatting)"+"\nCode Completion: \(codeCompletion)","edict\(eDict) ")
+        print ( "Naming Convention : \(namingConvention)"+"\nError Handling : \(errorHandling)"+"\nExtensions Defined : \(extensionsDefined)"+"\nCode Formatting: \(codeFormatting)"+"\nCode Completion: \(codeCompletion) ")
         
     }
 }
