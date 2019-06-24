@@ -56,9 +56,10 @@ class Faculty : Person
         
         print( "department : \(department)"+"\ndesignation : \(designation)"+"\nsalary : \(salary.currency())"+"\njoinDate : \(joinDate.getForamttedDate())")
         
-        print("\n---- Exam Details -----\n")
+        print("\n------|| Exams Created ||------")
         
         for item in arrayOfExam {
+            print("\n")
             print("Subject :\(item.subject)")
             print("Exams : \(item.examname)")
             print("Exam Date :\(item.examDate.getForamttedDate())")

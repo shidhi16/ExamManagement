@@ -34,7 +34,7 @@ class Exam : Display
     }
     func display()
     {
-        print("---------- || Exam Details || -----------\n")
+        print("\n---------- || Exam Details || -----------\n")
       //  print("Exam Id : \(self.examId)")
         
         print("Subject : \(self.subject)")

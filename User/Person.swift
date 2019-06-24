@@ -10,7 +10,7 @@ import Foundation
 
 enum Gender
 {
-    case MALE,FEMALE
+    case MALE,FEMALE, none
 }
 class Person : Display
 {
@@ -44,7 +44,7 @@ class Person : Display
         self.birthDate = birthdate
         self.firstName = fname
         self.lastName = lname
-        self.gender = Gender.MALE
+        self.gender = Gender.none
         self.emailId = email
         self.contactNo = contactNo
        
@@ -53,7 +53,7 @@ class Person : Display
   
     func display()
     {
-        print("\n-------- Person Details ---------\n")
+        print("\n--------|| Person Details ||---------\n")
      //  print("User Id :\(self.userid)")
         print("Full Name :\(self.fullName)")
         print("Birth Date :\(self.birthDate.getForamttedDate())")

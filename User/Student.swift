@@ -29,12 +29,49 @@ class Student : Person
         
     }
     var result:String
-    
+   {
+        //var finalResult : String
+        
+        if percentage >= 94
+        {
+            return "A+"
+        }
+        else if percentage > 87{
+        return "A"
+        }else if percentage > 80
+        {
+            return "A-"
+        }
+            else if percentage > 77
+        {
+            return "B+"
+        }
+        else if percentage > 73{
+            
+    return "B"
+        }else if percentage > 70
+        {
+            return "B-"
+        }else if percentage > 67
+        {
+            return "C+"
+        }else if percentage > 63
+        {
+            return "C"
+        }else if percentage > 60
+        {
+            return "C-"
+        }else if percentage > 50
+        {
+            return "D"
+        }
+        return "Fail"
+    }
     init(userid: Int, fname: String, lname: String, arrayexam: [Exam], gender: Gender, birthdate: Date, email: String, coursename : String, marks : Dictionary<String, Float>, result : String , arraysubjects : [String], contactNo : String )
     {
         self.courseName = coursename
         self.marks = marks
-        self.result = result
+      //  self.result = result
         super.init(userid: userid, fname: fname, lname: lname, arrayexam: arrayexam, gender: gender, birthdate: birthdate, email: email, arraysubjects: arraysubjects, contactNo: contactNo)
     }
     override func display()
@@ -43,9 +80,10 @@ class Student : Person
         print("\nCourse Name : \(courseName)")
         
         
-        print("\n---- Exam Details -----\n")
+        print("\n ------|| Exams Attempted ||-------")
         
         for item in arrayOfExam {
+            print("\n")
             print("Subject :\(item.subject)")
             print("Exam Name: \(item.examname)")
             print("Exam Date :\(item.examDate.getForamttedDate())")
