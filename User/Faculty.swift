@@ -53,7 +53,7 @@ class Faculty : Person
     override func display()
     {
         super.display()
-        print( "department : \(department)"+"\ndesignation : \(designation)"+"\nsalary : \(salary)"+"\njoinDate : \(joinDate.getForamttedDate())")
+        print( "department : \(department)"+"\ndesignation : \(designation)"+"\nsalary : \(salary.currency())"+"\njoinDate : \(joinDate.getForamttedDate())")
     }
     
 }

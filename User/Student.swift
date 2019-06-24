@@ -34,8 +34,6 @@ class Student : Person
     {
         self.courseName = coursename
         self.marks = marks
-      //  self.totalMarks = totalmarks
-       //self.percentage = percentage
         self.result = result
         super.init(userid: userid, fname: fname, lname: lname, arrayexam: arrayexam, gender: gender, birthdate: birthdate, email: email, arraysubjects: arraysubjects, contactNo: contactNo)
     }
@@ -52,7 +50,7 @@ class Student : Person
             print("Exams : \(item.examname)")
             print("Exam Date :\(item.examDate.getForamttedDate())")
         }
-            print("\nMarks : \(marks)"+"\nTotal Marks : \(totalMarks)"+"\nPercentage : \(percentage)" + "\nResult : \(result)")
+            print("\nMarks : \(marks)"+"\nTotal Marks : \(totalMarks)"+"\nPercentage : \(percentage.showPercentage())" + "\nResult : \(result)")
         
     }
 }
