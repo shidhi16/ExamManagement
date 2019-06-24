@@ -8,18 +8,18 @@
 
 import Foundation
 
-var qzQues1 = quizQuestions(qid: 1, question: "IOS Stands For", options: ["A : Internetwork Operating System","B : IPhone Operating System","C : Internet Operating System", "D :None Of Them"], answer: "A")
+var qzQues1 = quizQuestions(qid: 1, question: "IOS Stands For", options: ["A : Internetwork Operating System","B : IPhone Operating System","C : Internet Operating System", "D : None Of Them"], answer: "A")
 
-var qzQues2 = quizQuestions(qid: 2, question: "The IDE Used In Swift Is", options: ["Swiftc","Xcode","Gas", "Ld"], answer: "2")
+var qzQues2 = quizQuestions(qid: 2, question: "The IDE Used In Swift Is __", options: ["A : Swiftc","B : Xcode","C : Gas", "D : Ld"], answer: "B")
 
-var qzQues3 = quizQuestions(qid: 3, question: "To Create Mutable Object __ Is Used", options: ["A : let","Var","Both A & B", "None Of Them"], answer: "1")
+var qzQues3 = quizQuestions(qid: 3, question: "To Create Mutable Object __ Is Used", options: ["A : let","B : Var","C : Both A & B", "D : None Of Them"], answer: "C")
 
 
 
-var qz1 = Quiz(examid: 1, examname: "IOS QUIZ", examdate: Date(), subject: "Ios", incharge: "Pritesh Patel", quizid: 1 , marksforeach: 5.00, totalmarks: 50.0, passingmarks: 17.0, arrayques: [qzQues1, qzQues2])
+var qz1 = Quiz(examid: 1, examname: "IOS Quiz", examdate: Date(), subject: "Ios", incharge: "Pritesh Patel", quizid: 1 , marksforeach: 5.00, totalmarks: 50.0, passingmarks: 17.0, arrayques: [qzQues1, qzQues2])
 qz1.display()
 
-var qz2 = Quiz(examid: 2, examname: "IOS Project", examdate: Date(), subject: "Swift", incharge: "Joe Josh", quizid: 2 , marksforeach: 5.00, totalmarks: 50.0, passingmarks: 17.0, arrayques: [qzQues3, qzQues2])
+var qz2 = Quiz(examid: 2, examname: "Swift Quiz", examdate: Date(), subject: "Swift", incharge: "Joe Josh", quizid: 2 , marksforeach: 5.00, totalmarks: 50.0, passingmarks: 17.0, arrayques: [qzQues3, qzQues2])
 qz2.display()
 
 

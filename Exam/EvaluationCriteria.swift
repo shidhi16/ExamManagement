@@ -29,6 +29,7 @@ class EvaluationCriteria
     }
     func display()
     {
+       
         print ( "Naming Convention : \(namingConvention)"+"\nError Handling : \(errorHandling)"+"\nExtensions Defined : \(extensionsDefined)"+"\nCode Formatting: \(codeFormatting)"+"\nCode Completion: \(codeCompletion)","edict\(eDict) ")
         
     }

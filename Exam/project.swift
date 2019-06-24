@@ -30,5 +30,6 @@ class Project : Exam
         print("----------- Project Details -------------")
         print("Project Title :\(self.projectTitle)")
         print("ev:\(self.evaluationCriteria)")
+        self.evaluationCriteria.display()
     }
 }

@@ -53,7 +53,16 @@ class Faculty : Person
     override func display()
     {
         super.display()
+        
         print( "department : \(department)"+"\ndesignation : \(designation)"+"\nsalary : \(salary.currency())"+"\njoinDate : \(joinDate.getForamttedDate())")
+        
+        print("\n---- Exam Details -----\n")
+        
+        for item in arrayOfExam {
+            print("Subject :\(item.subject)")
+            print("Exams : \(item.examname)")
+            print("Exam Date :\(item.examDate.getForamttedDate())")
+        }
     }
     
 }

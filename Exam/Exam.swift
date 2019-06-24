@@ -34,10 +34,12 @@ class Exam : Display
     }
     func display()
     {
-        print("-------- Exam Details ---------")
-        print("Exam Id : \(self.examId)")
-        print("Exam Name : \(self.examname)")
+        print("---------- || Exam Details || -----------\n")
+      //  print("Exam Id : \(self.examId)")
+        
         print("Subject : \(self.subject)")
+        print("Exam Name : \(self.examname)")
+        
         print("Exam Date : \(self.examDate.getForamttedDate())")
         print("Incharge : \(self.Incharge)")
         print("Total Marks : \(self.totalMarks)")

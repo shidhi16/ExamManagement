@@ -43,13 +43,14 @@ class Student : Person
         print("\nCourse Name : \(courseName)")
         
         
-        print("---- Exam Details -----")
+        print("\n---- Exam Details -----\n")
         
         for item in arrayOfExam {
-            print("Subject \(item.subject)")
+            print("Subject :\(item.subject)")
             print("Exams : \(item.examname)")
             print("Exam Date :\(item.examDate.getForamttedDate())")
         }
+        
             print("\nMarks : \(marks)"+"\nTotal Marks : \(totalMarks)"+"\nPercentage : \(percentage.showPercentage())" + "\nResult : \(result)")
         
     }

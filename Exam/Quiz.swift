@@ -26,20 +26,22 @@ class Quiz : Exam
      override func display()
     {
         super.display()
-            print("----------- Quiz Details -------------")
-        print("Quiz Id : \(self.quizId)")
+            print("\n---------- || Quiz Details || ------------\n")
+       // print("Quiz Id : \(self.quizId)")
         print("Marks for Each Question : \(self.marksForEachQues)")
         
         for item in arrayOfQues {
-            print("\n")
-            print("Question : \(item.qId)")
-            print(item.ques)
+            //print("\n")
+          //  print("Question : \(item.qId)")
+            print("Question : \(item.ques)")
             print("Options :")
             for i in item.options{
                 print(i)
             }
-            print("answer : \(item.ans)") 
+            print("Answer : \(item.ans)")
+            print("\n")
         }
+        
     
     }
   

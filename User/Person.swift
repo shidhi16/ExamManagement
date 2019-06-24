@@ -53,8 +53,8 @@ class Person : Display
   
     func display()
     {
-        print("\n\n-------- Person Details ---------")
-       print("User Id :\(self.userid)")
+        print("\n-------- Person Details ---------\n")
+     //  print("User Id :\(self.userid)")
         print("Full Name :\(self.fullName)")
         print("Birth Date :\(self.birthDate.getForamttedDate())")
        
@@ -67,7 +67,7 @@ class Person : Display
             print("Invalid Email")
         }
         
-        //  print("Email Id :\(self.emailId)")
+        
         print("Contact No :\(self.contactNo)")
         
         // print("Exams :\(self.arrayOfExam)")
