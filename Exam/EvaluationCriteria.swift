@@ -30,7 +30,7 @@ class EvaluationCriteria
     func display()
     {
        
-        print ( "Naming Convention : \(namingConvention)"+"\nError Handling : \(errorHandling)"+"\nExtensions Defined : \(extensionsDefined)"+"\nCode Formatting: \(codeFormatting)"+"\nCode Completion: \(codeCompletion) ")
+        print ( "Naming Convention : \(namingConvention.showPercentage())"+"\nError Handling : \(errorHandling.showPercentage())"+"\nExtensions Defined : \(extensionsDefined.showPercentage())"+"\nCode Formatting: \(codeFormatting.showPercentage())"+"\nCode Completion: \(codeCompletion.showPercentage()) ")
         
     }
 }

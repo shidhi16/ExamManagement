@@ -10,7 +10,7 @@ import Foundation
 
 enum Gender
 {
-    case MALE,FEMALE, none
+    case Male,Female, none
 }
 class Person : Display
 {
@@ -44,7 +44,7 @@ class Person : Display
         self.birthDate = birthdate
         self.firstName = fname
         self.lastName = lname
-        self.gender = Gender.none
+        self.gender = gender
         self.emailId = email
         self.contactNo = contactNo
        
