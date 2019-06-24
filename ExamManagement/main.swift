@@ -31,7 +31,7 @@ qz2.display()
 
 var ev1 = EvaluationCriteria(namecon: 10, errorhandle: 15, extensiondefined: 15, codeformat: 25, codecompletion: 15)
 
-var exm1 = Exam(examid: 1, examdate: Date(), subject: "IOS", incharge: "Markle Mark", totalmarks: 100.0, passingmarks: 35.0, examname: "IOS Project")
+var exm1 = Exam(examid: 1, examdate: Date(), subject: "Ios", incharge: "Markle Mark", totalmarks: 100.0, passingmarks: 35.0, examname: "IOS Project")
 
 var exm2 = Exam(examid: 2, examdate: Date(), subject: "Ios", incharge: "Josh Joe", totalmarks: 100.0, passingmarks: 35.0, examname: "IOS Quiz")
 var exm3 = Exam(examid: 3, examdate: Date(), subject: "Java", incharge: "Pritesh Patel", totalmarks: 100.0, passingmarks: 35.0, examname: "Java Quiz")
@@ -46,11 +46,11 @@ var proj2 = Project(examid: 2, examname: "Java Project", examdate: Date(), subje
 proj2.display()
 
 
-var s1 = Student(userid: 1, fname: "Naina", lname: "Vaghasiya", arrayexam: [exm1,exm2], gender: Gender.Female, birthdate: Date(), email: "naina88@gmail.com", coursename: "MADT", marks: ["IOS": 97.00, "Swift": 88.00], arraysubjects: ["IOS" , "Swift"], contactNo: "90909090")
+var s1 = Student(userid: 1, fname: "Naina", lname: "Vaghasiya", arrayexam: [exm1,exm3], gender: Gender.Female, birthdate: Date(), email: "naina88@gmail.com", coursename: "MADT", marks: ["IOS": 97.00, "Swift": 88.00], arraysubjects: ["IOS" , "Swift"], contactNo: "90909090")
 s1.display()
 
 
-var s2 = Student(userid: 2, fname: "Shivani", lname: "Dhiman", arrayexam: [exm3,exm4], gender: Gender.Female, birthdate: Date(), email: "shivi", coursename: "Cloud Computing", marks: ["IOS": 65.00, "Swift": 45.00], arraysubjects: ["IOS" , "Swift"], contactNo: "90909090")
+var s2 = Student(userid: 2, fname: "Shivani", lname: "Dhiman", arrayexam: [exm4,exm2], gender: Gender.Female, birthdate: Date(), email: "shivi", coursename: "Cloud Computing", marks: ["IOS": 65.00, "Swift": 45.00], arraysubjects: ["IOS" , "Swift"], contactNo: "90909090")
 s2.display()
 
 
@@ -60,12 +60,12 @@ var f1 = Faculty(userid: 3, fname: "Pritesh", lname: "Patel", arrayexam: [exm2,e
 f1.display()
 
 
-var f2 = Faculty(userid: 4, fname: "Markle", lname: "Mack", arrayexam: [exm3,exm4], gender: Gender.Male, birthdate: Date(), email: "markle7mailcom", department: "Cloud Computing", designation: "Director", salary: 11000.00, joindate: Date(), arraysubjects: ["Android","Swift","Java"], contactNo : " 22267")
+var f2 = Faculty(userid: 4, fname: " Markle", lname: " Mack", arrayexam: [exm3,exm4], gender:  Gender.Male, birthdate: Date(), email: "markle7mailcom", department: " Cloud Computing", designation: " Director", salary: 11000.00, joindate: Date(), arraysubjects: ["Android","Swift","Java"], contactNo : " 22267")
 f2.display()
 
 if let myUser = Person.getuserById(userid: 2)
 {
     print(myUser.display())
 }else{
-    print("No User found of given Id")
+    print("\n \n No User found of given Id")
 }

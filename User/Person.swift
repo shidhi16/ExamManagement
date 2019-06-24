@@ -63,7 +63,7 @@ class Person : Display
     func display()
     {
         print("\n--------|| Person Details ||---------\n")
-       print("User Id :\(self.userid)")
+      // print("User Id :\(self.userid)")
         print("Full Name :\(self.fullName)")
         print("Birth Date :\(self.birthDate.getForamttedDate())")
        

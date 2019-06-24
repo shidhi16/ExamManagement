@@ -57,13 +57,13 @@ class Faculty : Person
     {
         super.display()
         
-        print( "department : \(department)"+"\ndesignation : \(designation)"+"\nsalary : \(salary.currency())"+"\njoinDate : \(joinDate.getForamttedDate())")
+        print( "Department : \(department)"+"\nDesignation : \(designation)"+"\nSalary : \(salary.currency())"+"\nJoin Date : \(joinDate.getForamttedDate())")
         
         print("\n------|| Exams Created ||------")
         
         for item in arrayOfExam {
             print("\n")
-            print("Subject :\(item.subject)")
+            print("Subjects :\(item.subject)")
             print("Exams : \(item.examname)")
             print("Exam Date :\(item.examDate.getForamttedDate())")
         }
