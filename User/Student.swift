@@ -67,7 +67,7 @@ class Student : Person
         }
         return "Fail"
     }
-    init(userid: Int, fname: String, lname: String, arrayexam: [Exam], gender: Gender, birthdate: Date, email: String, coursename : String, marks : Dictionary<String, Float>, result : String , arraysubjects : [String], contactNo : String )
+    init(userid: Int, fname: String, lname: String, arrayexam: [Exam], gender: Gender, birthdate: Date, email: String, coursename : String, marks : Dictionary<String, Float>,  arraysubjects : [String], contactNo : String )
     {
         self.courseName = coursename
         self.marks = marks
