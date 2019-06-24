@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		390F037E22C131F900797DCF /* Extension_currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390F037D22C131F900797DCF /* Extension_currency.swift */; };
 		3922711322B1D5FC00799BE3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922711222B1D5FC00799BE3 /* main.swift */; };
 		3922711A22B1D61700799BE3 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922711922B1D61700799BE3 /* Person.swift */; };
 		3922711C22B1D7A300799BE3 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922711B22B1D7A300799BE3 /* Student.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		390F037D22C131F900797DCF /* Extension_currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_currency.swift; sourceTree = "<group>"; };
 		3922710F22B1D5FC00799BE3 /* ExamManagement */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExamManagement; sourceTree = BUILT_PRODUCTS_DIR; };
 		3922711222B1D5FC00799BE3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3922711922B1D61700799BE3 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				3922721022BD793400799BE3 /* extension_float.swift */,
 				3922720E22BD762300799BE3 /* ExamCategory.swift */,
 				3922720822BD70DE00799BE3 /* Error */,
+				390F037D22C131F900797DCF /* Extension_currency.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				3922711C22B1D7A300799BE3 /* Student.swift in Sources */,
 				3922711322B1D5FC00799BE3 /* main.swift in Sources */,
 				3922716222B47A1A00799BE3 /* Display.swift in Sources */,
+				390F037E22C131F900797DCF /* Extension_currency.swift in Sources */,
 				9B8106D722BEE57F0076A399 /* extension_date.swift in Sources */,
 				3922713B22B2F62600799BE3 /* project.swift in Sources */,
 				3922716422B47FFB00799BE3 /* quizQuestions.swift in Sources */,
