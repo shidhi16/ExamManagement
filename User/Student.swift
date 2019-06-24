@@ -42,6 +42,6 @@ class Student : Person
     override func display()
     {
         super.display()
-        print("Subjects : \(arraysubjects)"+"\nCourse Name : \(courseName)"+"\nMarks : \(marks)"+"\nTotal Marks : \(totalMarks)"+"\nPercentage : \(percentage)" + "\nResult : \(result)")
+        print("Subjects : :::\(arraysubjects)"+"\nCourse Name : \(courseName)"+"\nMarks : \(marks)"+"\nTotal Marks : \(totalMarks)"+"\nPercentage : \(percentage)" + "\nResult : \(result)")
     }
 }
