@@ -64,11 +64,18 @@ class Person : Display
         if isValidEmail == true
         {  print("Email Id :\(self.emailId)")}
         else  {
-            print("Invalid Email")
+            print("Email ID : Invalid Email ! Try Again")
         }
         
-        
-        print("Contact No :\(self.contactNo)")
+        let isvalidContact = contactNo.isValidContact()
+        if isvalidContact == true{
+            print("Contact No :\(self.contactNo)")
+           
+        }else{
+            print("Phone Number : Invalid Mobile Number ! Try Again")
+        }
+
+       //
         
         // print("Exams :\(self.arrayOfExam)")
         print("Subjects :\(self.arraysubjects)")

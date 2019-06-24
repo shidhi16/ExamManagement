@@ -54,11 +54,11 @@ var s2 = Student(userid: 2, fname: "Shivani", lname: "Dhiman", arrayexam: [exm3,
 s2.display()
 
 
-var f1 = Faculty(userid: 1, fname: "Pritesh", lname: "Patel", arrayexam: [exm2,exm1], gender: Gender.Male, birthdate: Date(), email: "PriteshP@gmail.com", department: "MADT", designation: "Professior", salary: 6000.00, joindate: Date(), arraysubjects: ["Swift","IOS","Java"], contactNo : " 222(333)-6767")
+var f1 = Faculty(userid: 1, fname: "Pritesh", lname: "Patel", arrayexam: [exm2,exm1], gender: Gender.Male, birthdate: Date(), email: "PriteshP@gmail.com", department: "MADT", designation: "Professior", salary: 6000.00, joindate: Date(), arraysubjects: ["Swift","IOS","Java"], contactNo : "2223336767")
 
 
 f1.display()
 
 
-var f2 = Faculty(userid: 2, fname: "Markle", lname: "Mack", arrayexam: [exm3,exm4], gender: Gender.Male, birthdate: Date(), email: "markle7mailcom", department: "Cloud Computing", designation: "Director", salary: 11000.00, joindate: Date(), arraysubjects: ["Android","Swift","Java"], contactNo : " 222(333)-6767")
+var f2 = Faculty(userid: 2, fname: "Markle", lname: "Mack", arrayexam: [exm3,exm4], gender: Gender.Male, birthdate: Date(), email: "markle7mailcom", department: "Cloud Computing", designation: "Director", salary: 11000.00, joindate: Date(), arraysubjects: ["Android","Swift","Java"], contactNo : " 22267")
 f2.display()
