@@ -38,7 +38,7 @@ class Exam : Display
         print("Exam Id : \(self.examId)")
         print("Exam Name : \(self.examname)")
         print("Subject : \(self.subject)")
-        print("Exam Date : \(self.examDate)")
+        print("Exam Date : \(self.examDate.getForamttedDate())")
         print("Incharge : \(self.Incharge)")
         print("Total Marks : \(self.totalMarks)")
         print("Passing Marks :\(self.passingMarks)")

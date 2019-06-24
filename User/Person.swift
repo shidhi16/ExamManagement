@@ -56,7 +56,7 @@ class Person : Display
         print("\n\n-------- Person Details ---------")
        print("User Id :\(self.userid)")
         print("Full Name :\(self.fullName)")
-        print("Birth Date :\(self.birthDate)")
+        print("Birth Date :\(self.birthDate.getForamttedDate())")
        
         print("Gender :\(self.gender)")
         

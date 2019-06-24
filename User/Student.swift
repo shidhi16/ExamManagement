@@ -50,7 +50,7 @@ class Student : Person
         for item in arrayOfExam {
             print("Subject \(item.subject)")
             print("Exams : \(item.examname)")
-            print("Exam Date :\(item.examDate)")
+            print("Exam Date :\(item.examDate.getForamttedDate())")
         }
             print("\nMarks : \(marks)"+"\nTotal Marks : \(totalMarks)"+"\nPercentage : \(percentage)" + "\nResult : \(result)")
         
