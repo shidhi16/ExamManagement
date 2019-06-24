@@ -42,6 +42,17 @@ class Student : Person
     override func display()
     {
         super.display()
-        print("\nCourse Name : \(courseName)"+"\nMarks : \(marks)"+"\nTotal Marks : \(totalMarks)"+"\nPercentage : \(percentage)" + "\nResult : \(result)")
+        print("\nCourse Name : \(courseName)")
+        
+        
+        print("---- Exam Details -----")
+        
+        for item in arrayOfExam {
+            print("Subject \(item.subject)")
+            print("Exams : \(item.examname)")
+            print("Exam Date :\(item.examDate)")
+        }
+            print("\nMarks : \(marks)"+"\nTotal Marks : \(totalMarks)"+"\nPercentage : \(percentage)" + "\nResult : \(result)")
+        
     }
 }

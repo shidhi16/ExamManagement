@@ -73,15 +73,9 @@ class Person : Display
         // print("Exams :\(self.arrayOfExam)")
         print("Subjects :\(self.arraysubjects)")
 
-        print("---- Exam Details -----")
-
-        for item in arrayOfExam {
-          print("Subject \(item.subject)")
-            print("Exams : \(item.examname)")
-            print("Exam Date :\(item.examDate)")
             
         }
         
        
           }
-}
+
