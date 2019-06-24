@@ -33,7 +33,7 @@ class Person : Display
     var birthDate:Date
     var emailId: String
     var contactNo : String
-    
+    static var dictusers = [Int:Person]()
     init(userid : Int, fname : String, lname : String, arrayexam : [Exam], gender : Gender,
          birthdate : Date, email : String, arraysubjects : [String], contactNo : String
         )
@@ -49,12 +49,21 @@ class Person : Display
         self.contactNo = contactNo
        
     }
-    
+    static func getuserById(userid:Int) -> Person? {
+        
+        if let user = dictusers[userid] {
+            return user as Person
+        }
+        else {
+            return nil
+        }
+        
+    }
   
     func display()
     {
         print("\n--------|| Person Details ||---------\n")
-     //  print("User Id :\(self.userid)")
+       print("User Id :\(self.userid)")
         print("Full Name :\(self.fullName)")
         print("Birth Date :\(self.birthDate.getForamttedDate())")
        
@@ -82,7 +91,10 @@ class Person : Display
 
             
         }
+   
+    }
+    
         
        
-          }
+
 

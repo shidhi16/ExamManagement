@@ -74,6 +74,8 @@ class Student : Person
       //  self.result = result
         super.init(userid: userid, fname: fname, lname: lname, arrayexam: arrayexam, gender: gender, birthdate: birthdate, email: email, arraysubjects: arraysubjects, contactNo: contactNo)
     }
+    
+    
     override func display()
     {
         super.display()
