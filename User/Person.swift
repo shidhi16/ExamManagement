@@ -18,7 +18,7 @@ class Person : Display
    
     
     
-    var userid:Int?
+    var userid:Int
     var firstName:String?
     var lastName:String?
     var arrayOfExam = [Exam]()
@@ -51,7 +51,14 @@ class Person : Display
         self.contactNo = contactNo
        
     }
+    
+    
+    
     static func getuserById(userid:Int) -> Person? {
+       /* for a in dictusers{
+            print(a.value.userid)
+        }*/
+    
             if let user = dictusers[userid] {
                 return user as Person
             }
@@ -60,7 +67,13 @@ class Person : Display
             }
             
         }
-        
+    
+    static func addUsers(products: Person)
+    {
+        dictusers.updateValue(products, forKey: products.userid)
+    }
+    
+    
     
   
 func display()

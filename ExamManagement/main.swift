@@ -48,11 +48,11 @@ proj2.display()
 
 var s1 = Student(userid: 1, fname: "Naina", lname: "Vaghasiya", arrayexam: [exm1,exm3], gender: Gender.Female, birthdate: Date(), email: "naina88@gmail.com", coursename: "MADT", marks: ["IOS": 97.00, "Swift": 88.00], arraysubjects: ["IOS" , "Swift"], contactNo: "90909090")
 s1.display()
-
+Person.addUsers(products: s1)
 
 var s2 = Student(userid: 2, fname: "Shivani", lname: "Dhiman", arrayexam: [exm4,exm2], gender: Gender.Female, birthdate: Date(), email: "shivi", coursename: "Cloud Computing", marks: ["IOS": 65.00, "Swift": 45.00], arraysubjects: ["IOS" , "Swift"], contactNo: "90909090")
 s2.display()
-
+Person.addUsers(products: s2)
 
 var f1 = Faculty(userid: 3, fname: "Pritesh", lname: "Patel", arrayexam: [exm2,exm1], gender: Gender.Male, birthdate: Date(), email: "PriteshP@gmail.com", department: "MADT", designation: "Professior", salary: 6000.00, joindate: Date(), arraysubjects: ["Swift","IOS","Java"], contactNo : "2223336767")
 
@@ -63,9 +63,18 @@ f1.display()
 var f2 = Faculty(userid: 4, fname: " Markle", lname: " Mack", arrayexam: [exm3,exm4], gender:  Gender.Male, birthdate: Date(), email: "markle7mailcom", department: " Cloud Computing", designation: " Director", salary: 11000.00, joindate: Date(), arraysubjects: ["Android","Swift","Java"], contactNo : " 22267")
 f2.display()
 
+print("\n----|| My Search Person ||-----")
 if let myUser = Person.getuserById(userid: 2)
 {
     print(myUser.display())
 }else{
     print("\n \n No User found of given Id")
 }
+
+if let myUser = Person.getuserById(userid: 5)
+{
+    print(myUser.display())
+}else{
+    print("\n \n No User found of given Id")
+}
+
